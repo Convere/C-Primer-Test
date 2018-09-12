@@ -315,6 +315,12 @@
     <ClCompile Include="..\..\Primer_Test\Primer_Test\10.4.2_Test.cpp">
       <Filter>源文件\Part 2\Ch10_Test</Filter>
     </ClCompile>
+    <ClCompile Include="10.4.3_Test.cpp">
+      <Filter>源文件\Part 2\Ch10_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="10.6_Test.cpp">
+      <Filter>源文件\Part 2\Ch10_Test</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="..\..\Primer_Test\Primer_Test\8.3.1.txt">
@@ -322,6 +328,18 @@
     </Text>
     <Text Include="..\..\Primer_Test\Primer_Test\8.3.1_out.txt">
       <Filter>源文件\Part 2\Ch8_Test</Filter>
+    </Text>
+    <Text Include="file1.txt">
+      <Filter>源文件\Part 2\Ch10_Test</Filter>
+    </Text>
+    <Text Include="in1.txt">
+      <Filter>源文件\Part 2\Ch10_Test</Filter>
+    </Text>
+    <Text Include="outeven.txt">
+      <Filter>源文件\Part 2\Ch10_Test</Filter>
+    </Text>
+    <Text Include="outodd.txt">
+      <Filter>源文件\Part 2\Ch10_Test</Filter>
     </Text>
   </ItemGroup>
   <ItemGroup>

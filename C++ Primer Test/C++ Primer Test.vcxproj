@@ -201,10 +201,16 @@
     <ClCompile Include="..\..\Primer_Test\Primer_Test\9.5.2_Test.cpp" />
     <ClCompile Include="..\..\Primer_Test\Primer_Test\9.5.3_Test.cpp" />
     <ClCompile Include="..\..\Primer_Test\Primer_Test\9.5.5_Test.cpp" />
+    <ClCompile Include="10.4.3_Test.cpp" />
+    <ClCompile Include="10.6_Test.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="..\..\Primer_Test\Primer_Test\8.3.1.txt" />
     <Text Include="..\..\Primer_Test\Primer_Test\8.3.1_out.txt" />
+    <Text Include="file1.txt" />
+    <Text Include="in1.txt" />
+    <Text Include="outeven.txt" />
+    <Text Include="outodd.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Primer_Test\Primer_Test\Ch_6.h" />
