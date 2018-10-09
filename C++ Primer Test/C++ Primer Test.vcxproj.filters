@@ -49,6 +49,9 @@
     <Filter Include="源文件\Part 1\Ch7_Test">
       <UniqueIdentifier>{79ac4134-6f67-43a0-b247-3582e1a9ee55}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\Part 2\Ch11_Test">
+      <UniqueIdentifier>{08bb0d8b-9330-4c34-954d-5f75ff1cf92d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Primer_Test\Primer_Test\1.4.1_Test.cpp">
@@ -321,6 +324,33 @@
     <ClCompile Include="10.6_Test.cpp">
       <Filter>源文件\Part 2\Ch10_Test</Filter>
     </ClCompile>
+    <ClCompile Include="11.1_Test.cpp">
+      <Filter>源文件\Part 2\Ch11_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="11.2.1_Test.cpp">
+      <Filter>源文件\Part 2\Ch11_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="11.2.2_Test.cpp">
+      <Filter>源文件\Part 2\Ch11_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="源.cpp">
+      <Filter>源文件\Part 2\Ch11_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="11.2.3_Test.cpp">
+      <Filter>源文件\Part 2\Ch11_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="11.3.1_Test.cpp">
+      <Filter>源文件\Part 2\Ch11_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="11.3.2_Test.cpp">
+      <Filter>源文件\Part 2\Ch11_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="11.3.5_Test.cpp">
+      <Filter>源文件\Part 2\Ch11_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="11.3.6_Test.cpp">
+      <Filter>源文件\Part 2\Ch11_Test</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="..\..\Primer_Test\Primer_Test\8.3.1.txt">
@@ -340,6 +370,15 @@
     </Text>
     <Text Include="outodd.txt">
       <Filter>源文件\Part 2\Ch10_Test</Filter>
+    </Text>
+    <Text Include="file2.txt">
+      <Filter>源文件\Part 2\Ch11_Test</Filter>
+    </Text>
+    <Text Include="map_file.txt">
+      <Filter>源文件\Part 2\Ch11_Test</Filter>
+    </Text>
+    <Text Include="input.txt">
+      <Filter>源文件\Part 2\Ch11_Test</Filter>
     </Text>
   </ItemGroup>
   <ItemGroup>

@@ -1,4 +1,4 @@
-#include<iostream>  
+/*#include<iostream>  
 #include<string>  
 #include<vector>  
 #include<algorithm>  
@@ -23,4 +23,4 @@ int main()  //Á·Ï°10.42
 	//doit(words);
 	for (auto beg = words.begin(); beg != words.end(); beg++)
 		cout << "ÐÞ¸ÄÎª£º" << *beg << endl;
-}
+}*/

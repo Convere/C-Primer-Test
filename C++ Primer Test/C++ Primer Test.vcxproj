@@ -203,12 +203,24 @@
     <ClCompile Include="..\..\Primer_Test\Primer_Test\9.5.5_Test.cpp" />
     <ClCompile Include="10.4.3_Test.cpp" />
     <ClCompile Include="10.6_Test.cpp" />
+    <ClCompile Include="11.1_Test.cpp" />
+    <ClCompile Include="11.2.1_Test.cpp" />
+    <ClCompile Include="11.2.2_Test.cpp" />
+    <ClCompile Include="11.2.3_Test.cpp" />
+    <ClCompile Include="11.3.1_Test.cpp" />
+    <ClCompile Include="11.3.2_Test.cpp" />
+    <ClCompile Include="11.3.5_Test.cpp" />
+    <ClCompile Include="11.3.6_Test.cpp" />
+    <ClCompile Include="源.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="..\..\Primer_Test\Primer_Test\8.3.1.txt" />
     <Text Include="..\..\Primer_Test\Primer_Test\8.3.1_out.txt" />
     <Text Include="file1.txt" />
+    <Text Include="file2.txt" />
     <Text Include="in1.txt" />
+    <Text Include="input.txt" />
+    <Text Include="map_file.txt" />
     <Text Include="outeven.txt" />
     <Text Include="outodd.txt" />
   </ItemGroup>
