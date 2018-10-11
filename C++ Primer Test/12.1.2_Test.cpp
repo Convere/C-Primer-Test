@@ -1,4 +1,4 @@
-#include<iostream>  
+/*#include<iostream>  
 #include<string>  
 #include<vector>  
 #include<algorithm>  
@@ -68,4 +68,4 @@ int main()  //Á·Ï°12.7
 	a2(temp);
 	a3(temp);
 	return 0;
-}
+}*/

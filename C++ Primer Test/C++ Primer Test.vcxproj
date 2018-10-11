@@ -213,6 +213,7 @@
     <ClCompile Include="11.3.6_Test.cpp" />
     <ClCompile Include="12.1.2_Test.cpp" />
     <ClCompile Include="12.1.1_Test.cpp" />
+    <ClCompile Include="12.1.6_Test.cpp" />
     <ClCompile Include="源.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -222,6 +223,7 @@
     <Text Include="file2.txt" />
     <Text Include="in1.txt" />
     <Text Include="input.txt" />
+    <Text Include="input_line.txt" />
     <Text Include="map_file.txt" />
     <Text Include="outeven.txt" />
     <Text Include="outodd.txt" />
