@@ -52,6 +52,9 @@
     <Filter Include="源文件\Part 2\Ch11_Test">
       <UniqueIdentifier>{08bb0d8b-9330-4c34-954d-5f75ff1cf92d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\Part 2\Ch12_Test">
+      <UniqueIdentifier>{59a79aa3-243d-4f4b-8399-6da70954884c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Primer_Test\Primer_Test\1.4.1_Test.cpp">
@@ -350,6 +353,12 @@
     </ClCompile>
     <ClCompile Include="11.3.6_Test.cpp">
       <Filter>源文件\Part 2\Ch11_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="12.1.2_Test.cpp">
+      <Filter>源文件\Part 2\Ch12_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="12.1.1_Test.cpp">
+      <Filter>源文件\Part 2\Ch12_Test</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
