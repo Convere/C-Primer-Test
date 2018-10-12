@@ -1,4 +1,4 @@
-#include <vector>
+/*#include <vector>
 #include <string>
 #include <initializer_list>
 #include <memory>
@@ -123,4 +123,4 @@ int main(int argc, char**argv)
 	for (StrBlobPtr pbeg(a.begin()), pend(a.end()); pbeg != pend; pbeg.incr())
 			cout << pbeg.deref() << endl;
 	return 0;
-}
+}*/

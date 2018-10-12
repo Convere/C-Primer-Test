@@ -363,6 +363,15 @@
     <ClCompile Include="12.1.6_Test.cpp">
       <Filter>源文件\Part 2\Ch12_Test</Filter>
     </ClCompile>
+    <ClCompile Include="12.2.1_Test.cpp">
+      <Filter>源文件\Part 2\Ch12_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="12.2.2_Test.cpp">
+      <Filter>源文件\Part 2\Ch12_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="12.3.1_Test.cpp">
+      <Filter>源文件\Part 2\Ch12_Test</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="..\..\Primer_Test\Primer_Test\8.3.1.txt">

@@ -214,6 +214,9 @@
     <ClCompile Include="12.1.2_Test.cpp" />
     <ClCompile Include="12.1.1_Test.cpp" />
     <ClCompile Include="12.1.6_Test.cpp" />
+    <ClCompile Include="12.2.1_Test.cpp" />
+    <ClCompile Include="12.2.2_Test.cpp" />
+    <ClCompile Include="12.3.1_Test.cpp" />
     <ClCompile Include="源.cpp" />
   </ItemGroup>
   <ItemGroup>
