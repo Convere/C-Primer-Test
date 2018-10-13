@@ -68,7 +68,9 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);F:\Users\CAD\C++ Primer Test</IncludePath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -85,6 +87,9 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
     </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -113,94 +118,95 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\1.4.1_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\1.4.2_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\1.4.3_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\1.4.4_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\1.5.1_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\1.5.2_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\1.5.3_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\10.1_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\10.2.1_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\10.2.2_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\10.2.3_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\10.3.1_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\10.3.2_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\10.3.3_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\10.3.4_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\10.4.1_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\10.4.2_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\2.1.2_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\2.1.3_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\2.3.2_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\2.5.2_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\2.5.3_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\2.6.1_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\2.6.2_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\2.6.3_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\3.2.2_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\3.2.3_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\3.2_EX.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\3.3.2_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\3.3.3_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\3.4.1_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\3.4.2_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\3.5.2_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\3.5.3_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\3.5.5_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\3.6_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\4.2_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\4.7_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\4.9_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\5.3.1_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\5.3.2_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\5.4.1_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\5.4.2_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\5.4.4_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\5.5.1_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\5.6.3_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\6.1.1_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\6.1_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\6.2.1_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\6.2.2_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\6.2.3_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\6.2.4_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\6.2.5_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\6.2.6_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\6.3.2_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\6.3.3_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\6.4.2_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\6.5.3_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\6.7_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\7.1.1_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\7.1.2_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\7.1.3_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\7.1.4_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\7.2.1_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\7.3.1_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\7.3.3_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\7.3.4_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\7.4.1_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\7.5.1_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\7.5.3_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\7.6_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\8.1.2_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\8.2.1_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\8.3.1_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\9.2.1_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\9.2.4_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\9.2.5_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\9.2.7_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\9.3.1_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\9.3.2_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\9.3.3_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\9.3.4_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\9.3.6_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\9.4_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\9.5.1_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\9.5.2_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\9.5.3_Test.cpp" />
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\9.5.5_Test.cpp" />
+    <ClCompile Include="1.4.1_Test.cpp" />
+    <ClCompile Include="1.4.2_Test.cpp" />
+    <ClCompile Include="1.4.3_Test.cpp" />
+    <ClCompile Include="1.4.4_Test.cpp" />
+    <ClCompile Include="1.5.1_Test.cpp" />
+    <ClCompile Include="1.5.2_Test.cpp" />
+    <ClCompile Include="1.5.3_Test.cpp" />
+    <ClCompile Include="10.1_Test.cpp" />
+    <ClCompile Include="10.2.1_Test.cpp" />
+    <ClCompile Include="10.2.2_Test.cpp" />
+    <ClCompile Include="10.2.3_Test.cpp" />
+    <ClCompile Include="10.3.1_Test.cpp" />
+    <ClCompile Include="10.3.2_Test.cpp" />
+    <ClCompile Include="10.3.3_Test.cpp" />
+    <ClCompile Include="10.3.4_Test.cpp" />
+    <ClCompile Include="10.4.1_Test.cpp" />
+    <ClCompile Include="10.4.2_Test.cpp" />
+    <ClCompile Include="12.3.2_Test.cpp" />
+    <ClCompile Include="2.1.2_Test.cpp" />
+    <ClCompile Include="2.1.3_Test.cpp" />
+    <ClCompile Include="2.3.2_Test.cpp" />
+    <ClCompile Include="2.5.2_Test.cpp" />
+    <ClCompile Include="2.5.3_Test.cpp" />
+    <ClCompile Include="2.6.1_Test.cpp" />
+    <ClCompile Include="2.6.2_Test.cpp" />
+    <ClCompile Include="2.6.3_Test.cpp" />
+    <ClCompile Include="3.2.2_Test.cpp" />
+    <ClCompile Include="3.2.3_Test.cpp" />
+    <ClCompile Include="3.2_EX.cpp" />
+    <ClCompile Include="3.3.2_Test.cpp" />
+    <ClCompile Include="3.3.3_Test.cpp" />
+    <ClCompile Include="3.4.1_Test.cpp" />
+    <ClCompile Include="3.4.2_Test.cpp" />
+    <ClCompile Include="3.5.2_Test.cpp" />
+    <ClCompile Include="3.5.3_Test.cpp" />
+    <ClCompile Include="3.5.5_Test.cpp" />
+    <ClCompile Include="3.6_Test.cpp" />
+    <ClCompile Include="4.2_Test.cpp" />
+    <ClCompile Include="4.7_Test.cpp" />
+    <ClCompile Include="4.9_Test.cpp" />
+    <ClCompile Include="5.3.1_Test.cpp" />
+    <ClCompile Include="5.3.2_Test.cpp" />
+    <ClCompile Include="5.4.1_Test.cpp" />
+    <ClCompile Include="5.4.2_Test.cpp" />
+    <ClCompile Include="5.4.4_Test.cpp" />
+    <ClCompile Include="5.5.1_Test.cpp" />
+    <ClCompile Include="5.6.3_Test.cpp" />
+    <ClCompile Include="6.1.1_Test.cpp" />
+    <ClCompile Include="6.1_Test.cpp" />
+    <ClCompile Include="6.2.1_Test.cpp" />
+    <ClCompile Include="6.2.2_Test.cpp" />
+    <ClCompile Include="6.2.3_Test.cpp" />
+    <ClCompile Include="6.2.4_Test.cpp" />
+    <ClCompile Include="6.2.5_Test.cpp" />
+    <ClCompile Include="6.2.6_Test.cpp" />
+    <ClCompile Include="6.3.2_Test.cpp" />
+    <ClCompile Include="6.3.3_Test.cpp" />
+    <ClCompile Include="6.4.2_Test.cpp" />
+    <ClCompile Include="6.5.3_Test.cpp" />
+    <ClCompile Include="6.7_Test.cpp" />
+    <ClCompile Include="7.1.1_Test.cpp" />
+    <ClCompile Include="7.1.2_Test.cpp" />
+    <ClCompile Include="7.1.3_Test.cpp" />
+    <ClCompile Include="7.1.4_Test.cpp" />
+    <ClCompile Include="7.2.1_Test.cpp" />
+    <ClCompile Include="7.3.1_Test.cpp" />
+    <ClCompile Include="7.3.3_Test.cpp" />
+    <ClCompile Include="7.3.4_Test.cpp" />
+    <ClCompile Include="7.4.1_Test.cpp" />
+    <ClCompile Include="7.5.1_Test.cpp" />
+    <ClCompile Include="7.5.3_Test.cpp" />
+    <ClCompile Include="7.6_Test.cpp" />
+    <ClCompile Include="8.1.2_Test.cpp" />
+    <ClCompile Include="8.2.1_Test.cpp" />
+    <ClCompile Include="8.3.1_Test.cpp" />
+    <ClCompile Include="9.2.1_Test.cpp" />
+    <ClCompile Include="9.2.4_Test.cpp" />
+    <ClCompile Include="9.2.5_Test.cpp" />
+    <ClCompile Include="9.2.7_Test.cpp" />
+    <ClCompile Include="9.3.1_Test.cpp" />
+    <ClCompile Include="9.3.2_Test.cpp" />
+    <ClCompile Include="9.3.3_Test.cpp" />
+    <ClCompile Include="9.3.4_Test.cpp" />
+    <ClCompile Include="9.3.6_Test.cpp" />
+    <ClCompile Include="9.4_Test.cpp" />
+    <ClCompile Include="9.5.1_Test.cpp" />
+    <ClCompile Include="9.5.2_Test.cpp" />
+    <ClCompile Include="9.5.3_Test.cpp" />
+    <ClCompile Include="9.5.5_Test.cpp" />
     <ClCompile Include="10.4.3_Test.cpp" />
     <ClCompile Include="10.6_Test.cpp" />
     <ClCompile Include="11.1_Test.cpp" />
@@ -220,8 +226,8 @@
     <ClCompile Include="源.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="..\..\Primer_Test\Primer_Test\8.3.1.txt" />
-    <Text Include="..\..\Primer_Test\Primer_Test\8.3.1_out.txt" />
+    <Text Include="8.3.1.txt" />
+    <Text Include="8.3.1_out.txt" />
     <Text Include="file1.txt" />
     <Text Include="file2.txt" />
     <Text Include="in1.txt" />
@@ -232,10 +238,10 @@
     <Text Include="outodd.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Primer_Test\Primer_Test\Ch_6.h" />
-    <ClInclude Include="..\..\Primer_Test\Primer_Test\Ch_7.h" />
-    <ClInclude Include="..\..\Primer_Test\Primer_Test\Sales_item.h" />
-    <ClInclude Include="..\..\Primer_Test\Primer_Test\Version_test.h" />
+    <ClInclude Include="Ch_6.h" />
+    <ClInclude Include="Ch_7.h" />
+    <ClInclude Include="Sales_item.h" />
+    <ClInclude Include="Version_test.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

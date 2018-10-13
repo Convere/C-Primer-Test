@@ -1,4 +1,4 @@
-#include <vector>
+/*#include <vector>
 #include <string>
 #include <cstring>
 #include <initializer_list>
@@ -29,7 +29,7 @@ int main()  //Á·Ï°12.28
 	while (getline(in1, word1))
 		save.push_back(word1);
 	while (in2 >> word2)
-		++place[word2];
+		++place[word2]; 
 
 
 	cout << "ÊäÈëÐèÒª²éÕÒµÄ×Ö·û" << endl;
@@ -52,4 +52,4 @@ int main()  //Á·Ï°12.28
 			cout << "    " << "(line" << n << ")" << " " << s << endl;
 		n++;
 	}
-}
+}*/

@@ -57,270 +57,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\1.4.1_Test.cpp">
-      <Filter>源文件\Part 1\Ch1_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\1.4.2_Test.cpp">
-      <Filter>源文件\Part 1\Ch1_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\1.4.3_Test.cpp">
-      <Filter>源文件\Part 1\Ch1_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\1.4.4_Test.cpp">
-      <Filter>源文件\Part 1\Ch1_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\1.5.1_Test.cpp">
-      <Filter>源文件\Part 1\Ch1_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\1.5.2_Test.cpp">
-      <Filter>源文件\Part 1\Ch1_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\1.5.3_Test.cpp">
-      <Filter>源文件\Part 1\Ch1_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\2.1.2_Test.cpp">
-      <Filter>源文件\Part 1\Ch2_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\2.1.3_Test.cpp">
-      <Filter>源文件\Part 1\Ch2_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\2.3.2_Test.cpp">
-      <Filter>源文件\Part 1\Ch2_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\2.5.2_Test.cpp">
-      <Filter>源文件\Part 1\Ch2_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\2.5.3_Test.cpp">
-      <Filter>源文件\Part 1\Ch2_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\2.6.1_Test.cpp">
-      <Filter>源文件\Part 1\Ch2_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\2.6.2_Test.cpp">
-      <Filter>源文件\Part 1\Ch2_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\2.6.3_Test.cpp">
-      <Filter>源文件\Part 1\Ch2_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\3.2.2_Test.cpp">
-      <Filter>源文件\Part 1\Ch3_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\3.2.3_Test.cpp">
-      <Filter>源文件\Part 1\Ch3_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\3.2_EX.cpp">
-      <Filter>源文件\Part 1\Ch3_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\3.3.2_Test.cpp">
-      <Filter>源文件\Part 1\Ch3_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\3.3.3_Test.cpp">
-      <Filter>源文件\Part 1\Ch3_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\3.4.1_Test.cpp">
-      <Filter>源文件\Part 1\Ch3_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\3.4.2_Test.cpp">
-      <Filter>源文件\Part 1\Ch3_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\3.5.2_Test.cpp">
-      <Filter>源文件\Part 1\Ch3_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\3.5.3_Test.cpp">
-      <Filter>源文件\Part 1\Ch3_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\3.5.5_Test.cpp">
-      <Filter>源文件\Part 1\Ch3_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\3.6_Test.cpp">
-      <Filter>源文件\Part 1\Ch3_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\4.2_Test.cpp">
-      <Filter>源文件\Part 1\Ch4_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\4.7_Test.cpp">
-      <Filter>源文件\Part 1\Ch4_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\4.9_Test.cpp">
-      <Filter>源文件\Part 1\Ch4_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\5.3.1_Test.cpp">
-      <Filter>源文件\Part 1\Ch5_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\5.3.2_Test.cpp">
-      <Filter>源文件\Part 1\Ch5_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\5.4.1_Test.cpp">
-      <Filter>源文件\Part 1\Ch5_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\5.4.2_Test.cpp">
-      <Filter>源文件\Part 1\Ch5_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\5.4.4_Test.cpp">
-      <Filter>源文件\Part 1\Ch5_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\5.5.1_Test.cpp">
-      <Filter>源文件\Part 1\Ch5_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\5.6.3_Test.cpp">
-      <Filter>源文件\Part 1\Ch5_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\6.1.1_Test.cpp">
-      <Filter>源文件\Part 1\Ch6_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\6.1_Test.cpp">
-      <Filter>源文件\Part 1\Ch6_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\6.2.1_Test.cpp">
-      <Filter>源文件\Part 1\Ch6_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\6.2.2_Test.cpp">
-      <Filter>源文件\Part 1\Ch6_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\6.2.3_Test.cpp">
-      <Filter>源文件\Part 1\Ch6_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\6.2.4_Test.cpp">
-      <Filter>源文件\Part 1\Ch6_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\6.2.5_Test.cpp">
-      <Filter>源文件\Part 1\Ch6_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\6.2.6_Test.cpp">
-      <Filter>源文件\Part 1\Ch6_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\6.3.2_Test.cpp">
-      <Filter>源文件\Part 1\Ch6_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\6.3.3_Test.cpp">
-      <Filter>源文件\Part 1\Ch6_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\6.4.2_Test.cpp">
-      <Filter>源文件\Part 1\Ch6_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\6.5.3_Test.cpp">
-      <Filter>源文件\Part 1\Ch6_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\6.7_Test.cpp">
-      <Filter>源文件\Part 1\Ch6_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\7.1.1_Test.cpp">
-      <Filter>源文件\Part 1\Ch7_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\7.1.2_Test.cpp">
-      <Filter>源文件\Part 1\Ch7_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\7.1.3_Test.cpp">
-      <Filter>源文件\Part 1\Ch7_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\7.1.4_Test.cpp">
-      <Filter>源文件\Part 1\Ch7_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\7.2.1_Test.cpp">
-      <Filter>源文件\Part 1\Ch7_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\7.3.1_Test.cpp">
-      <Filter>源文件\Part 1\Ch7_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\7.3.3_Test.cpp">
-      <Filter>源文件\Part 1\Ch7_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\7.3.4_Test.cpp">
-      <Filter>源文件\Part 1\Ch7_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\7.4.1_Test.cpp">
-      <Filter>源文件\Part 1\Ch7_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\7.5.1_Test.cpp">
-      <Filter>源文件\Part 1\Ch7_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\7.5.3_Test.cpp">
-      <Filter>源文件\Part 1\Ch7_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\7.6_Test.cpp">
-      <Filter>源文件\Part 1\Ch7_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\8.1.2_Test.cpp">
-      <Filter>源文件\Part 2\Ch8_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\8.2.1_Test.cpp">
-      <Filter>源文件\Part 2\Ch8_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\8.3.1_Test.cpp">
-      <Filter>源文件\Part 2\Ch8_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\9.2.1_Test.cpp">
-      <Filter>源文件\Part 2\Ch9_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\9.2.4_Test.cpp">
-      <Filter>源文件\Part 2\Ch9_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\9.2.5_Test.cpp">
-      <Filter>源文件\Part 2\Ch9_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\9.2.7_Test.cpp">
-      <Filter>源文件\Part 2\Ch9_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\9.3.1_Test.cpp">
-      <Filter>源文件\Part 2\Ch9_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\9.3.2_Test.cpp">
-      <Filter>源文件\Part 2\Ch9_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\9.3.3_Test.cpp">
-      <Filter>源文件\Part 2\Ch9_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\9.3.4_Test.cpp">
-      <Filter>源文件\Part 2\Ch9_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\9.3.6_Test.cpp">
-      <Filter>源文件\Part 2\Ch9_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\9.4_Test.cpp">
-      <Filter>源文件\Part 2\Ch9_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\9.5.1_Test.cpp">
-      <Filter>源文件\Part 2\Ch9_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\9.5.2_Test.cpp">
-      <Filter>源文件\Part 2\Ch9_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\9.5.3_Test.cpp">
-      <Filter>源文件\Part 2\Ch9_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\9.5.5_Test.cpp">
-      <Filter>源文件\Part 2\Ch9_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\10.1_Test.cpp">
-      <Filter>源文件\Part 2\Ch10_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\10.2.1_Test.cpp">
-      <Filter>源文件\Part 2\Ch10_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\10.2.2_Test.cpp">
-      <Filter>源文件\Part 2\Ch10_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\10.2.3_Test.cpp">
-      <Filter>源文件\Part 2\Ch10_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\10.3.1_Test.cpp">
-      <Filter>源文件\Part 2\Ch10_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\10.3.2_Test.cpp">
-      <Filter>源文件\Part 2\Ch10_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\10.3.3_Test.cpp">
-      <Filter>源文件\Part 2\Ch10_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\10.3.4_Test.cpp">
-      <Filter>源文件\Part 2\Ch10_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\10.4.1_Test.cpp">
-      <Filter>源文件\Part 2\Ch10_Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Primer_Test\Primer_Test\10.4.2_Test.cpp">
-      <Filter>源文件\Part 2\Ch10_Test</Filter>
-    </ClCompile>
     <ClCompile Include="10.4.3_Test.cpp">
       <Filter>源文件\Part 2\Ch10_Test</Filter>
     </ClCompile>
@@ -372,14 +108,275 @@
     <ClCompile Include="12.3.1_Test.cpp">
       <Filter>源文件\Part 2\Ch12_Test</Filter>
     </ClCompile>
+    <ClCompile Include="1.4.1_Test.cpp">
+      <Filter>源文件\Part 1\Ch1_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="1.4.2_Test.cpp">
+      <Filter>源文件\Part 1\Ch1_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="1.4.3_Test.cpp">
+      <Filter>源文件\Part 1\Ch1_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="1.4.4_Test.cpp">
+      <Filter>源文件\Part 1\Ch1_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="1.5.1_Test.cpp">
+      <Filter>源文件\Part 1\Ch1_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="1.5.2_Test.cpp">
+      <Filter>源文件\Part 1\Ch1_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="1.5.3_Test.cpp">
+      <Filter>源文件\Part 1\Ch1_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="2.1.2_Test.cpp">
+      <Filter>源文件\Part 1\Ch2_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="2.1.3_Test.cpp">
+      <Filter>源文件\Part 1\Ch2_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="2.3.2_Test.cpp">
+      <Filter>源文件\Part 1\Ch2_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="2.5.2_Test.cpp">
+      <Filter>源文件\Part 1\Ch2_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="2.5.3_Test.cpp">
+      <Filter>源文件\Part 1\Ch2_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="2.6.1_Test.cpp">
+      <Filter>源文件\Part 1\Ch2_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="2.6.2_Test.cpp">
+      <Filter>源文件\Part 1\Ch2_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="2.6.3_Test.cpp">
+      <Filter>源文件\Part 1\Ch2_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="3.2.2_Test.cpp">
+      <Filter>源文件\Part 1\Ch3_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="3.2.3_Test.cpp">
+      <Filter>源文件\Part 1\Ch3_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="3.2_EX.cpp">
+      <Filter>源文件\Part 1\Ch3_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="3.3.2_Test.cpp">
+      <Filter>源文件\Part 1\Ch3_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="3.3.3_Test.cpp">
+      <Filter>源文件\Part 1\Ch3_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="3.4.1_Test.cpp">
+      <Filter>源文件\Part 1\Ch3_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="3.4.2_Test.cpp">
+      <Filter>源文件\Part 1\Ch3_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="3.5.2_Test.cpp">
+      <Filter>源文件\Part 1\Ch3_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="3.5.3_Test.cpp">
+      <Filter>源文件\Part 1\Ch3_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="3.5.5_Test.cpp">
+      <Filter>源文件\Part 1\Ch3_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="3.6_Test.cpp">
+      <Filter>源文件\Part 1\Ch3_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="4.2_Test.cpp">
+      <Filter>源文件\Part 1\Ch4_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="4.7_Test.cpp">
+      <Filter>源文件\Part 1\Ch4_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="4.9_Test.cpp">
+      <Filter>源文件\Part 1\Ch4_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="5.3.1_Test.cpp">
+      <Filter>源文件\Part 1\Ch5_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="5.3.2_Test.cpp">
+      <Filter>源文件\Part 1\Ch5_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="5.4.1_Test.cpp">
+      <Filter>源文件\Part 1\Ch5_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="5.4.2_Test.cpp">
+      <Filter>源文件\Part 1\Ch5_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="5.4.4_Test.cpp">
+      <Filter>源文件\Part 1\Ch5_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="5.5.1_Test.cpp">
+      <Filter>源文件\Part 1\Ch5_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="5.6.3_Test.cpp">
+      <Filter>源文件\Part 1\Ch5_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="6.1.1_Test.cpp">
+      <Filter>源文件\Part 1\Ch6_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="6.1_Test.cpp">
+      <Filter>源文件\Part 1\Ch6_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="6.2.1_Test.cpp">
+      <Filter>源文件\Part 1\Ch6_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="6.2.2_Test.cpp">
+      <Filter>源文件\Part 1\Ch6_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="6.2.3_Test.cpp">
+      <Filter>源文件\Part 1\Ch6_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="6.2.4_Test.cpp">
+      <Filter>源文件\Part 1\Ch6_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="6.2.5_Test.cpp">
+      <Filter>源文件\Part 1\Ch6_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="6.2.6_Test.cpp">
+      <Filter>源文件\Part 1\Ch6_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="6.3.2_Test.cpp">
+      <Filter>源文件\Part 1\Ch6_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="6.3.3_Test.cpp">
+      <Filter>源文件\Part 1\Ch6_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="6.4.2_Test.cpp">
+      <Filter>源文件\Part 1\Ch6_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="6.5.3_Test.cpp">
+      <Filter>源文件\Part 1\Ch6_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="6.7_Test.cpp">
+      <Filter>源文件\Part 1\Ch6_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="7.1.1_Test.cpp">
+      <Filter>源文件\Part 1\Ch7_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="7.1.2_Test.cpp">
+      <Filter>源文件\Part 1\Ch7_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="7.1.3_Test.cpp">
+      <Filter>源文件\Part 1\Ch7_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="7.1.4_Test.cpp">
+      <Filter>源文件\Part 1\Ch7_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="7.2.1_Test.cpp">
+      <Filter>源文件\Part 1\Ch7_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="7.3.1_Test.cpp">
+      <Filter>源文件\Part 1\Ch7_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="7.3.3_Test.cpp">
+      <Filter>源文件\Part 1\Ch7_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="7.3.4_Test.cpp">
+      <Filter>源文件\Part 1\Ch7_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="7.4.1_Test.cpp">
+      <Filter>源文件\Part 1\Ch7_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="7.5.1_Test.cpp">
+      <Filter>源文件\Part 1\Ch7_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="7.5.3_Test.cpp">
+      <Filter>源文件\Part 1\Ch7_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="7.6_Test.cpp">
+      <Filter>源文件\Part 1\Ch7_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="8.1.2_Test.cpp">
+      <Filter>源文件\Part 2\Ch8_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="8.2.1_Test.cpp">
+      <Filter>源文件\Part 2\Ch8_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="8.3.1_Test.cpp">
+      <Filter>源文件\Part 2\Ch8_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="9.2.1_Test.cpp">
+      <Filter>源文件\Part 2\Ch9_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="9.2.4_Test.cpp">
+      <Filter>源文件\Part 2\Ch9_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="9.2.5_Test.cpp">
+      <Filter>源文件\Part 2\Ch9_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="9.2.7_Test.cpp">
+      <Filter>源文件\Part 2\Ch9_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="9.3.1_Test.cpp">
+      <Filter>源文件\Part 2\Ch9_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="9.3.2_Test.cpp">
+      <Filter>源文件\Part 2\Ch9_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="9.3.3_Test.cpp">
+      <Filter>源文件\Part 2\Ch9_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="9.3.4_Test.cpp">
+      <Filter>源文件\Part 2\Ch9_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="9.3.6_Test.cpp">
+      <Filter>源文件\Part 2\Ch9_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="9.4_Test.cpp">
+      <Filter>源文件\Part 2\Ch9_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="9.5.1_Test.cpp">
+      <Filter>源文件\Part 2\Ch9_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="9.5.2_Test.cpp">
+      <Filter>源文件\Part 2\Ch9_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="9.5.3_Test.cpp">
+      <Filter>源文件\Part 2\Ch9_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="9.5.5_Test.cpp">
+      <Filter>源文件\Part 2\Ch9_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="10.4.2_Test.cpp">
+      <Filter>源文件\Part 2\Ch10_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="10.1_Test.cpp">
+      <Filter>源文件\Part 2\Ch10_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="10.2.1_Test.cpp">
+      <Filter>源文件\Part 2\Ch10_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="10.2.2_Test.cpp">
+      <Filter>源文件\Part 2\Ch10_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="10.2.3_Test.cpp">
+      <Filter>源文件\Part 2\Ch10_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="10.3.1_Test.cpp">
+      <Filter>源文件\Part 2\Ch10_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="10.3.2_Test.cpp">
+      <Filter>源文件\Part 2\Ch10_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="10.3.3_Test.cpp">
+      <Filter>源文件\Part 2\Ch10_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="10.3.4_Test.cpp">
+      <Filter>源文件\Part 2\Ch10_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="10.4.1_Test.cpp">
+      <Filter>源文件\Part 2\Ch10_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="12.3.2_Test.cpp">
+      <Filter>源文件\Part 2\Ch12_Test</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="..\..\Primer_Test\Primer_Test\8.3.1.txt">
-      <Filter>源文件\Part 2\Ch8_Test</Filter>
-    </Text>
-    <Text Include="..\..\Primer_Test\Primer_Test\8.3.1_out.txt">
-      <Filter>源文件\Part 2\Ch8_Test</Filter>
-    </Text>
     <Text Include="file1.txt">
       <Filter>源文件\Part 2\Ch10_Test</Filter>
     </Text>
@@ -404,18 +401,20 @@
     <Text Include="input_line.txt">
       <Filter>源文件\Part 2\Ch12_Test</Filter>
     </Text>
+    <Text Include="8.3.1.txt" />
+    <Text Include="8.3.1_out.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Primer_Test\Primer_Test\Ch_7.h">
+    <ClInclude Include="Ch_6.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Primer_Test\Primer_Test\Sales_item.h">
+    <ClInclude Include="Ch_7.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Primer_Test\Primer_Test\Version_test.h">
+    <ClInclude Include="Sales_item.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Primer_Test\Primer_Test\Ch_6.h">
+    <ClInclude Include="Version_test.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
