@@ -136,6 +136,8 @@
     <ClCompile Include="10.4.1_Test.cpp" />
     <ClCompile Include="10.4.2_Test.cpp" />
     <ClCompile Include="12.3.2_Test.cpp" />
+    <ClCompile Include="13.1.2_Test.cpp" />
+    <ClCompile Include="13.1.3_Test.cpp" />
     <ClCompile Include="2.1.2_Test.cpp" />
     <ClCompile Include="2.1.3_Test.cpp" />
     <ClCompile Include="2.3.2_Test.cpp" />

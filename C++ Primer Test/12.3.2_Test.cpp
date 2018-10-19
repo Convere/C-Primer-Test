@@ -1,15 +1,15 @@
-#include <vector>
+/*#include <vector>
 #include <string>
 #include <cstring>
 #include <initializer_list>
 #include <memory>
 #include <exception>
-#include<iostream>  
-#include<algorithm>  
-#include<numeric>  
-#include<functional>
-#include<iterator>
-#include<list>
+#include <iostream>  
+#include <algorithm>  
+#include <numeric>  
+#include <functional>
+#include <iterator>
+#include <list>
 #include <fstream>
 #include <sstream>
 #include <map>
@@ -41,7 +41,7 @@ private:
 	map<string, shared_ptr<set<line_no>>> wm;
 };
 
-TextQuery::TextQuery(ifstream &is) :file(new vector<string>)  //
+TextQuery::TextQuery(ifstream &is) :file(new vector<string>)
 {
 	string text;
 	while (getline(is, text))
@@ -94,4 +94,4 @@ void runQueries(ifstream &infile)  //统筹函数，用于输入数据，以及使其计算加打印
 int main()
 {
 	runQueries(ifstream ("input_line.txt"));
-}
+}*/
