@@ -138,6 +138,12 @@
     <ClCompile Include="12.3.2_Test.cpp" />
     <ClCompile Include="13.1.2_Test.cpp" />
     <ClCompile Include="13.1.3_Test.cpp" />
+    <ClCompile Include="13.1.4_Test.cpp" />
+    <ClCompile Include="13.1.6_Test.cpp" />
+    <ClCompile Include="13.2.2_Test.cpp" />
+    <ClCompile Include="13.2_Test.cpp" />
+    <ClCompile Include="13.3_Test.cpp" />
+    <ClCompile Include="13.4_Test.cpp" />
     <ClCompile Include="2.1.2_Test.cpp" />
     <ClCompile Include="2.1.3_Test.cpp" />
     <ClCompile Include="2.3.2_Test.cpp" />

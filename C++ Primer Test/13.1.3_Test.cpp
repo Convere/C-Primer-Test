@@ -1,4 +1,4 @@
-#include<iostream>  
+/*#include<iostream>  
 #include<string>  
 #include<vector>
 #include<memory>
@@ -54,4 +54,4 @@ int main()  //练习13.13
 	cout << "动态分配—拷贝赋值" << val5->a << endl;
 
 	//整个过程，输出6个值，共有4个默认构造函数，1个拷贝赋值运算符，3个拷贝构造函数，7个析构函数调用
-}
+}*/
