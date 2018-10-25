@@ -86,6 +86,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
+      <AdditionalOptions>-D_SCL_SECURE_NO_WARNINGS %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -144,6 +145,10 @@
     <ClCompile Include="13.2_Test.cpp" />
     <ClCompile Include="13.3_Test.cpp" />
     <ClCompile Include="13.4_Test.cpp" />
+    <ClCompile Include="13.5_String_Test.cpp" />
+    <ClCompile Include="13.5_Test.cpp" />
+    <ClCompile Include="13.6.1_Test.cpp" />
+    <ClCompile Include="13.6.2_Test.cpp" />
     <ClCompile Include="2.1.2_Test.cpp" />
     <ClCompile Include="2.1.3_Test.cpp" />
     <ClCompile Include="2.3.2_Test.cpp" />
@@ -248,7 +253,10 @@
   <ItemGroup>
     <ClInclude Include="Ch_6.h" />
     <ClInclude Include="Ch_7.h" />
+    <ClInclude Include="Message.h" />
     <ClInclude Include="Sales_item.h" />
+    <ClInclude Include="String.h" />
+    <ClInclude Include="StrVec.h" />
     <ClInclude Include="Version_test.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

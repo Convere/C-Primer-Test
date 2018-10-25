@@ -405,6 +405,18 @@
     <ClCompile Include="13.4_Test.cpp">
       <Filter>源文件\Part 3\Ch13_Test</Filter>
     </ClCompile>
+    <ClCompile Include="13.5_Test.cpp">
+      <Filter>源文件\Part 3\Ch13_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="13.5_String_Test.cpp">
+      <Filter>源文件\Part 3\Ch13_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="13.6.1_Test.cpp">
+      <Filter>源文件\Part 3\Ch13_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="13.6.2_Test.cpp">
+      <Filter>源文件\Part 3\Ch13_Test</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="file1.txt">
@@ -445,6 +457,15 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Version_test.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="StrVec.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="String.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Message.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
