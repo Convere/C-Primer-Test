@@ -28,7 +28,9 @@ public:
 		first_free = cap = newdata.second;   //这里的=cap非常重要，即对cap重新赋值，不然会报错
 	}
 	StrVec(const StrVec&);  //拷贝构造函数的声明
+	StrVec(StrVec &&) noexcept;  //移动构造函数的声明
 	StrVec &operator=(const StrVec&);  //拷贝赋值运算符的声明
+	StrVec &operator=(StrVec &&) noexcept;  //移动赋值运算符的声明
 	~StrVec();  //析构函数的声明
 	void push_back(const string&);  //拷贝元素的函数声明
 	size_t size() const { return first_free - elements; }  //已用大小的函数声明
@@ -58,6 +60,14 @@ StrVec::StrVec(const StrVec &s)   //拷贝构造函数
 	first_free = newdata.second;  //end定义
 }
 
+StrVec::StrVec(StrVec &&s) noexcept  //移动构造函数
+{
+	elements = s.elements;
+	first_free = s.first_free;
+	cap = s.cap;
+	s.elements = s.first_free = s.cap = nullptr;
+}
+
 StrVec &StrVec::operator=(const StrVec &rhs)  //拷贝赋值运算符
 {
 	auto data = alloc_n_copy(rhs.begin(), rhs.end());  //分配新的内存，data保存了内存元素的begin和end
@@ -65,6 +75,19 @@ StrVec &StrVec::operator=(const StrVec &rhs)  //拷贝赋值运算符
 	elements = data.first;  //使用新内存的指针来初始化
 	first_free = data.second;
 	return *this;  //返回rhs中的string字符串
+}
+
+StrVec &StrVec::operator=(StrVec &&rhs) noexcept  //移动赋值运算符
+{
+	if (this != &rhs)
+	{
+		free();
+		elements = rhs.elements;
+		first_free = rhs.first_free;
+		cap = rhs.cap;
+		rhs.elements = rhs.first_free = rhs.cap = nullptr;
+	}
+	return *this;
 }
 
 StrVec::~StrVec()  //析构函数

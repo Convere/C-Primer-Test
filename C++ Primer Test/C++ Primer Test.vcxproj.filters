@@ -61,6 +61,9 @@
     <Filter Include="源文件\Part 3\Ch13_Test">
       <UniqueIdentifier>{a5ff563e-fe3e-4e0d-8ff7-f67879743bdf}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\Part 3\Ch14_Test">
+      <UniqueIdentifier>{bbc405fa-3c8e-41ff-a8ed-1c9c3d9bacaa}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="10.4.3_Test.cpp">
@@ -417,6 +420,9 @@
     <ClCompile Include="13.6.2_Test.cpp">
       <Filter>源文件\Part 3\Ch13_Test</Filter>
     </ClCompile>
+    <ClCompile Include="13.6.3_Test.cpp">
+      <Filter>源文件\Part 3\Ch13_Test</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="file1.txt">
@@ -443,8 +449,12 @@
     <Text Include="input_line.txt">
       <Filter>源文件\Part 2\Ch12_Test</Filter>
     </Text>
-    <Text Include="8.3.1.txt" />
-    <Text Include="8.3.1_out.txt" />
+    <Text Include="8.3.1.txt">
+      <Filter>源文件\Part 2\Ch8_Test</Filter>
+    </Text>
+    <Text Include="8.3.1_out.txt">
+      <Filter>源文件\Part 2\Ch8_Test</Filter>
+    </Text>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Ch_6.h">
@@ -466,6 +476,12 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Message.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HasPtr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="StrBlob.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

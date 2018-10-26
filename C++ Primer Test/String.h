@@ -33,8 +33,8 @@ public:
 	}
 	String(const String&);  //拷贝构造函数的声明
 	String &operator=(const String&);  //拷贝赋值运算符的声明
-	String::String(String&& s) : elements(s.elements), first_free(s.first_free) { s.elements = s.first_free = nullptr; cout << "移动构造函数调用" << endl; } //移动构造函数的声明
-	String& operator=(String&&);  //移动赋值运算符的声明
+	String(String&& s) noexcept: elements(s.elements), first_free(s.first_free) { s.elements = s.first_free = nullptr; cout << "移动构造函数调用" << endl; } //移动构造函数的声明
+	String& operator=(String&&) noexcept;  //移动赋值运算符的声明
 	~String() { free(); };  //析构函数的声明
 
 	size_t size() const { return first_free - elements; }  //已用大小的函数声明
@@ -67,7 +67,7 @@ String &String::operator=(const String&s)
 	return *this;
 }
 
-String& String::operator=(String&& rhs)  
+String& String::operator=(String&& rhs) noexcept
 {
 	if (this != &rhs) 
 	{

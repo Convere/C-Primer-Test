@@ -143,7 +143,7 @@ int main() //练习13.47与13.48
 	cout << svec.capacity() << endl; 
 	svec.push_back(baz()); //svec内存扩大，旧内存的元素到新内存的拷贝构造两次；新数据读入，调用正常的拷贝构造函数一次；baz()函数调用一次C一次拷贝构造
 	cout << svec.capacity() << endl;
-	svec.push_back("good job");  //svec内存扩大，旧内存的元素到新内存的拷贝构造三次；新数据读入，调用正常的拷贝构造函数一次；good job作为C字符串一次C一次拷贝构造
+	svec.push_back("good job");  //svec内存扩大，旧内存的元素到新内存的拷贝构造三次；新数据读入，调用正常的拷贝构造函数一次；good job作为C字符串一次C
 	cout << svec.capacity() << endl;
 	svec.push_back(s1);//svec内存扩大，旧内存的元素到新内存的拷贝构造四次；新数据读入，调用正常的拷贝构造函数一次；
 	cout << svec.capacity() << endl;
