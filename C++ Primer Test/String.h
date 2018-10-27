@@ -19,6 +19,7 @@ using namespace std;
 
 class String
 {
+	friend bool operator<(const String &lhs, const String &rhs);
 public:
 	String() { cout << "默认构造函数调用" << endl; }  //默认构造函数
 	String(const char*s)//接受c风格字符串参数的构造函数，s为指向字符串的指针(首位置)
@@ -49,7 +50,35 @@ private:
 	char *first_free;		//指向数组第一个空闲元素的指针
 };
 
-String::String(const String&s)
+bool operator<(const String &lhs, const String &rhs)
+{
+	return lexicographical_compare(lhs.begin(), lhs.end(), rhs.begin(),rhs.end());
+}
+
+bool operator>(const String &lhs, const String &rhs)
+{
+	return rhs < lhs;
+}
+
+bool operator==(const String &a, const String &b)
+{
+	return a.size() == b.size() && equal(a.begin(), a.end(), b.begin());
+}
+
+bool operator!=(const String &a, const String &b)
+{
+	return !(a == b);
+}
+
+ostream &operator<<(ostream &out, const String &temp)
+{
+	for (auto &s : temp)
+		out << s;
+	out << endl;
+	return out;
+}
+
+String::String(const String &s)
 {
 	auto newdata = alloc_n_copy(s.begin(), s.end());
 	elements = newdata.first;

@@ -150,6 +150,9 @@
     <ClCompile Include="13.6.1_Test.cpp" />
     <ClCompile Include="13.6.2_Test.cpp" />
     <ClCompile Include="13.6.3_Test.cpp" />
+    <ClCompile Include="14.1_Test.cpp" />
+    <ClCompile Include="14.2.1_Test.cpp" />
+    <ClCompile Include="14.2.2_Test.cpp" />
     <ClCompile Include="2.1.2_Test.cpp" />
     <ClCompile Include="2.1.3_Test.cpp" />
     <ClCompile Include="2.3.2_Test.cpp" />
@@ -256,10 +259,12 @@
     <ClInclude Include="Ch_7.h" />
     <ClInclude Include="HasPtr.h" />
     <ClInclude Include="Message.h" />
+    <ClInclude Include="Sales_data.h" />
     <ClInclude Include="Sales_item.h" />
     <ClInclude Include="StrBlob.h" />
     <ClInclude Include="String.h" />
     <ClInclude Include="StrVec.h" />
+    <ClInclude Include="Tree.h" />
     <ClInclude Include="Version_test.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -31,6 +31,7 @@ public:
 	StrVec(StrVec &&) noexcept;  //移动构造函数的声明
 	StrVec &operator=(const StrVec&);  //拷贝赋值运算符的声明
 	StrVec &operator=(StrVec &&) noexcept;  //移动赋值运算符的声明
+	StrVec &operator=(initializer_list<string> il);
 	~StrVec();  //析构函数的声明
 	void push_back(const string&);  //拷贝元素的函数声明
 	size_t size() const { return first_free - elements; }  //已用大小的函数声明
@@ -52,6 +53,35 @@ public:
 	string *first_free;		//指向数组第一个空闲元素的指针
 	string *cap;			//指向数组尾后位置的指针
 };
+
+StrVec &StrVec::operator=(initializer_list<string> il)
+{
+	auto data = alloc_n_copy(il.begin(), il.end());
+	free();
+	elements = data.first;
+	first_free = cap = data.second;
+	return *this;
+}
+
+bool operator<(const StrVec &lhs, const StrVec &rhs)
+{
+	return lexicographical_compare(lhs.begin(), lhs.end(), rhs.begin(), rhs.end());
+}
+
+bool operator>(const StrVec &lhs, const StrVec &rhs)
+{
+	return rhs < lhs;
+}
+
+bool operator==(const StrVec &lhs, const StrVec &rhs)
+{
+	return (lhs.size() == rhs.size() && equal(lhs.begin(), lhs.end(), rhs.begin()));
+}
+
+bool operator!=(const StrVec &lhs, const StrVec &rhs)
+{
+	return !(lhs == rhs);
+}
 
 StrVec::StrVec(const StrVec &s)   //拷贝构造函数
 {
