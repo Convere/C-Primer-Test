@@ -20,6 +20,8 @@ public:
 											 //构造函数即以上
 	Sales_data &operator+=(const Sales_data &);
 	Sales_data &operator=(const string &ISBN);
+	explicit operator string() const { return bookNo; }
+	explicit operator double() const { return avg_price(); }
 private:
 	string bookNo;
 	unsigned units_sold = 0;

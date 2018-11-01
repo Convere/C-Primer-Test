@@ -64,6 +64,9 @@
     <Filter Include="源文件\Part 3\Ch14_Test">
       <UniqueIdentifier>{bbc405fa-3c8e-41ff-a8ed-1c9c3d9bacaa}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\Part 3\Ch15_Test">
+      <UniqueIdentifier>{6da6a1d3-b260-483a-b392-e8563b49a5aa}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="10.4.3_Test.cpp">
@@ -432,6 +435,39 @@
     <ClCompile Include="14.2.2_Test.cpp">
       <Filter>源文件\Part 3\Ch14_Test</Filter>
     </ClCompile>
+    <ClCompile Include="14.7_Test.cpp">
+      <Filter>源文件\Part 3\Ch14_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="14.8_Test.cpp">
+      <Filter>源文件\Part 3\Ch14_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="14.8.1_Test.cpp">
+      <Filter>源文件\Part 3\Ch14_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="14.8.2_Test.cpp">
+      <Filter>源文件\Part 3\Ch14_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="14.8.3_Test.cpp">
+      <Filter>源文件\Part 3\Ch14_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="14.9.1_Test.cpp">
+      <Filter>源文件\Part 3\Ch14_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="15.2.1_Test.cpp">
+      <Filter>源文件\Part 3\Ch15_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="15.2.2_Test.cpp">
+      <Filter>源文件\Part 3\Ch15_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="15.3_Test.cpp">
+      <Filter>源文件\Part 3\Ch15_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="15.4_Test.cpp">
+      <Filter>源文件\Part 3\Ch15_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="15.5_Test.cpp">
+      <Filter>源文件\Part 3\Ch15_Test</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="file1.txt">
@@ -497,6 +533,12 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Tree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Quote.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Shape.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

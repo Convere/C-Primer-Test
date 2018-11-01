@@ -109,6 +109,8 @@ public:
 	StrBlobPtr& operator--();   //前置运算符
 	StrBlobPtr& operator++(int);
 	StrBlobPtr& operator--(int);  //后置运算符，int作为一个标志，不参与运算
+	string &operator*() const { auto p = check(curr, "dereference past end"); return (*p)[curr]; }
+	string *operator->() const { return &this->operator*(); }
 private:
 	shared_ptr<vector<string>>check(size_t, const string&) const;
 	weak_ptr<vector<string>> wptr;
@@ -129,13 +131,16 @@ StrBlobPtr &StrBlobPtr::operator--()  //前置运算符
 }
 StrBlobPtr &StrBlobPtr::operator++(int)
 {
-
+	StrBlobPtr ret = *this;
+	++*this;
+	return ret;
 }
 StrBlobPtr &StrBlobPtr::operator--(int) //后置运算符，int作为一个标志，不参与运算
 {
-
+	StrBlobPtr ret = *this;
+	--*this;
+	return ret;
 }
-
 
 bool operator<(const StrBlobPtr &lhs, const StrBlobPtr &rhs)
 {
@@ -191,3 +196,14 @@ StrBlobPtr StrBlob::end()
 	auto ret = StrBlobPtr(*this, data->size());
 	return ret;
 }
+
+class SB
+{
+public:
+	SB() = default;
+	SB(StrBlobPtr* p) : sb(p) {}
+	StrBlobPtr &operator*(){return *(this->sb);}
+	StrBlobPtr *operator->(){return &this->operator*();}
+private:
+	StrBlobPtr *sb = nullptr;
+};
