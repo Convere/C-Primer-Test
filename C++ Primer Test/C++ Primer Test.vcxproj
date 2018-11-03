@@ -164,6 +164,9 @@
     <ClCompile Include="15.3_Test.cpp" />
     <ClCompile Include="15.4_Test.cpp" />
     <ClCompile Include="15.5_Test.cpp" />
+    <ClCompile Include="15.7.3_Test.cpp" />
+    <ClCompile Include="15.8_Test.cpp" />
+    <ClCompile Include="15.9.3._Test.cpp" />
     <ClCompile Include="2.1.2_Test.cpp" />
     <ClCompile Include="2.1.3_Test.cpp" />
     <ClCompile Include="2.3.2_Test.cpp" />
@@ -251,11 +254,13 @@
     <ClCompile Include="12.2.1_Test.cpp" />
     <ClCompile Include="12.2.2_Test.cpp" />
     <ClCompile Include="12.3.1_Test.cpp" />
+    <ClCompile Include="EX222.cpp" />
     <ClCompile Include="源.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="8.3.1.txt" />
     <Text Include="8.3.1_out.txt" />
+    <Text Include="Alice_Emma.txt" />
     <Text Include="file1.txt" />
     <Text Include="file2.txt" />
     <Text Include="in1.txt" />
@@ -270,6 +275,7 @@
     <ClInclude Include="Ch_7.h" />
     <ClInclude Include="HasPtr.h" />
     <ClInclude Include="Message.h" />
+    <ClInclude Include="Query.h" />
     <ClInclude Include="Quote.h" />
     <ClInclude Include="Sales_data.h" />
     <ClInclude Include="Sales_item.h" />

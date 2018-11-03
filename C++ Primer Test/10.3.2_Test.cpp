@@ -1,12 +1,12 @@
-#include <iostream>
-#include <numeric>
-#include <vector>
-#include <fstream>
-#include <string>
-#include <iterator>
-#include <list>
-#include <algorithm>
-using namespace std;
+//#include <iostream>
+//#include <numeric>
+//#include <vector>
+//#include <fstream>
+//#include <string>
+//#include <iterator>
+//#include <list>
+//#include <algorithm>
+//using namespace std;
 
 /*int main()
 {

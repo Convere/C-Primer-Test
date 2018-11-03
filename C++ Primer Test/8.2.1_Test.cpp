@@ -1,9 +1,9 @@
-#include <iostream>
-#include <vector>
-#include <fstream>
-#include <string>
-#include <sstream>
-using namespace std;
+//#include <iostream>
+//#include <vector>
+//#include <fstream>
+//#include <string>
+//#include <sstream>
+//using namespace std;
 
 /*void fun(const string &file, vector<string> &word)     //运行结果一直都是无法打开文件，因为压根就没有mfile这个文件存在
 {

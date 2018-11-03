@@ -468,6 +468,18 @@
     <ClCompile Include="15.5_Test.cpp">
       <Filter>源文件\Part 3\Ch15_Test</Filter>
     </ClCompile>
+    <ClCompile Include="15.7.3_Test.cpp">
+      <Filter>源文件\Part 3\Ch15_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="15.8_Test.cpp">
+      <Filter>源文件\Part 3\Ch15_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="15.9.3._Test.cpp">
+      <Filter>源文件\Part 3\Ch15_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="EX222.cpp">
+      <Filter>源文件\Part 3\Ch15_Test</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="file1.txt">
@@ -499,6 +511,9 @@
     </Text>
     <Text Include="8.3.1_out.txt">
       <Filter>源文件\Part 2\Ch8_Test</Filter>
+    </Text>
+    <Text Include="Alice_Emma.txt">
+      <Filter>源文件\Part 3\Ch15_Test</Filter>
     </Text>
   </ItemGroup>
   <ItemGroup>
@@ -539,6 +554,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Shape.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Query.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
