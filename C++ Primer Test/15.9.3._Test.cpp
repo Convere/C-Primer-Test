@@ -22,18 +22,13 @@ int main()
 
 	//runQueries(ifstream("Alice_Emma.txt"));
 
-	history h;
-	while (true)
-	{
-		cin.clear();
-		cout << "press other to use this program,or out to quit: ";
-		string s;
-		if (!(cin >> s)||s == "out")break;
-		{
-			runQueries(ifstream("Alice_Emma.txt"), h); cin.clear();
-			cout << endl;
-			check_history(h); cin.clear();
-			cout << endl;
-		}
-	}
+	history h1, h2;     //练习15.42(b) 历史系统的构建
+	Run(h1, ifstream("Alice_Emma.txt"));
+	Run(h2, ifstream("Alice_Emma.txt"));
+	cout << "原h1" << endl;
+	check_history(h1);
+	//h1 += h2;
+	add(h1, h2);
+	cout << "相加后的h1" << endl;
+	check_history(h1);
 }

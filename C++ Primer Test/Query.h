@@ -1,4 +1,4 @@
-#include <vector>
+ï»¿#include <vector>
 #include <string>
 #include <cstring>
 #include <initializer_list>
@@ -18,27 +18,27 @@
 using namespace std;
 using line_no = vector<string>::size_type;
 
-class QueryResult  //×Ö·û´òÓ¡Àà
+class QueryResult  //å­—ç¬¦æ‰“å°ç±»
 {
 	friend ostream& print(ostream&, const QueryResult&);
 	//friend ostream& print_qr(ostream &a, const Query &b, ifstream &c);
 public:
-	QueryResult(string s, shared_ptr<set<line_no>> p, shared_ptr<vector<string>> f) :sought(s), lines(p), file(f) {}  //¹¹Ôìº¯Êı
+	QueryResult(string s, shared_ptr<set<line_no>> p, shared_ptr<vector<string>> f) :sought(s), lines(p), file(f) {}  //æ„é€ å‡½æ•°
 	auto begin() { return (*lines).begin(); }
 	auto end() { return (*lines).end(); }
 	auto get_file() { return file; }
 //private:
-	string sought;  //±£´æ²éÑ¯µÄµ¥´Ê
-	shared_ptr<set<line_no>> lines;  //Ö¸Ïòµ¥´Ê³öÏÖµÄĞĞºÅset£»
-	shared_ptr<vector<string>> file; //Ö¸Ïò±£´æÃ¿ĞĞÊäÈëÎÄ¼şµÄvector
+	string sought;  //ä¿å­˜æŸ¥è¯¢çš„å•è¯
+	shared_ptr<set<line_no>> lines;  //æŒ‡å‘å•è¯å‡ºç°çš„è¡Œå·setï¼›
+	shared_ptr<vector<string>> file; //æŒ‡å‘ä¿å­˜æ¯è¡Œè¾“å…¥æ–‡ä»¶çš„vector
 };
 
-class TextQuery  //×Ö·û´¦ÀíÀà£¬Í¨¹ıÊäÈëÎÄ¼ş£¬µÃµ½´æ´¢µÄÃ¿ĞĞÊı¾İ£¬ÒÔ¼°²»Í¬µ¥´Ê³öÏÖ´ÎÊıµÄÊı¾İ¡£
+class TextQuery  //å­—ç¬¦å¤„ç†ç±»ï¼Œé€šè¿‡è¾“å…¥æ–‡ä»¶ï¼Œå¾—åˆ°å­˜å‚¨çš„æ¯è¡Œæ•°æ®ï¼Œä»¥åŠä¸åŒå•è¯å‡ºç°æ¬¡æ•°çš„æ•°æ®ã€‚
 {
 	friend ostream& print(ostream&, const QueryResult&);
 	//friend ostream& print_qr(ostream&, const Query &, ifstream &);
 public:
-	TextQuery(ifstream&);//¹¹Ôìº¯ÊıµÄÉùÃ÷£¬¶¨Òå¶¨ÔÚÍâ²¿
+	TextQuery(ifstream&);//æ„é€ å‡½æ•°çš„å£°æ˜ï¼Œå®šä¹‰å®šåœ¨å¤–éƒ¨
 	QueryResult query(const string&) const;
 private:
 	shared_ptr<vector<string>> file;
@@ -50,32 +50,32 @@ TextQuery::TextQuery(ifstream &is) :file(new vector<string>)
 	string text;
 	while (getline(is, text))
 	{
-		file->push_back(text);  //ÔÚvectorÖĞ½«Ô´ÎÄ¼şÃ¿ĞĞ±£Áô
-		int n = file->size();  //¼ÇÂ¼ĞĞºÅ
-		istringstream line(text);  //·Ö½âÃ¿ĞĞ£¬Ê¹Ö®³ÉÎª¸÷¸öµ¥´Ê£¬ÔÙ´ÎĞÎ³ÉÊäÈëÁ÷
+		file->push_back(text);  //åœ¨vectorä¸­å°†æºæ–‡ä»¶æ¯è¡Œä¿ç•™
+		int n = file->size();  //è®°å½•è¡Œå·
+		istringstream line(text);  //åˆ†è§£æ¯è¡Œï¼Œä½¿ä¹‹æˆä¸ºå„ä¸ªå•è¯ï¼Œå†æ¬¡å½¢æˆè¾“å…¥æµ
 		string word;
 		while (line >> word)
 		{
-			auto &lines = wm[word];  //½«ÊäÈëµÄµ¥´Ê´æÈëmapÖĞ£¬×Ô¼ºµİÔö£¬Í¬Ê±ÔÙ´´½¨Ò»¸öÒıÓÃĞÍµÄÖ¸Õëlines£¬Ö¸ÏòmapµÄÔªËØset
+			auto &lines = wm[word];  //å°†è¾“å…¥çš„å•è¯å­˜å…¥mapä¸­ï¼Œè‡ªå·±é€’å¢ï¼ŒåŒæ—¶å†åˆ›å»ºä¸€ä¸ªå¼•ç”¨å‹çš„æŒ‡é’ˆlinesï¼ŒæŒ‡å‘mapçš„å…ƒç´ set
 			if (!lines)
-				lines.reset(new set<line_no>);  //ÈôwmÖĞÓĞword£¬·µ»ØÆä¶ÔÓ¦µÄÔªËØ£¬Ôò²»Ö´ĞĞ´ËÓï¾ä£»
-												//Ã»ÓĞword£¬Ôò½«Æä´æÈë£¬´ËÊ±¸ÃwordµÄÔªËØÎª¿Õ£¬Ö´ĞĞ´ËÓï¾ä£¬ÎªÆäÌí¼ÓÒ»¸öĞÂµÄset×÷ÎªÆßÔªËØ
-			lines->insert(n);//ÔÚ¶ÔÓ¦µÄwordÔªËØsetÖĞ²åÈëÊı×Ö£¬´ú±íĞĞÊı
+				lines.reset(new set<line_no>);  //è‹¥wmä¸­æœ‰wordï¼Œè¿”å›å…¶å¯¹åº”çš„å…ƒç´ ï¼Œåˆ™ä¸æ‰§è¡Œæ­¤è¯­å¥ï¼›
+												//æ²¡æœ‰wordï¼Œåˆ™å°†å…¶å­˜å…¥ï¼Œæ­¤æ—¶è¯¥wordçš„å…ƒç´ ä¸ºç©ºï¼Œæ‰§è¡Œæ­¤è¯­å¥ï¼Œä¸ºå…¶æ·»åŠ ä¸€ä¸ªæ–°çš„setä½œä¸ºä¸ƒå…ƒç´ 
+			lines->insert(n);//åœ¨å¯¹åº”çš„wordå…ƒç´ setä¸­æ’å…¥æ•°å­—ï¼Œä»£è¡¨è¡Œæ•°
 		}
 	}
 }
 
-QueryResult TextQuery::query(const string &sought)const  //²éÕÒº¯Êı£¬ÓÃÓÚ½«ÊäÈëµÄµ¥´Ê½øĞĞ²éÑ¯£¬²¢´æ´¢Êı¾İ
+QueryResult TextQuery::query(const string &sought)const  //æŸ¥æ‰¾å‡½æ•°ï¼Œç”¨äºå°†è¾“å…¥çš„å•è¯è¿›è¡ŒæŸ¥è¯¢ï¼Œå¹¶å­˜å‚¨æ•°æ®
 {
-	static shared_ptr<set<line_no>> nodata(new set<line_no>);  //Ò»¸ö¿ÕµÄsetÖ¸Õë
+	static shared_ptr<set<line_no>> nodata(new set<line_no>);  //ä¸€ä¸ªç©ºçš„setæŒ‡é’ˆ
 	auto loc = wm.find(sought);
 	if (loc == wm.end())
-		return QueryResult(sought, nodata, file); //Ã»ÕÒµ½£¬Êä³öËÑË÷´Ê£¬ÎŞÊı¾İ£¬²éÕÒÎÄ¼ş
+		return QueryResult(sought, nodata, file); //æ²¡æ‰¾åˆ°ï¼Œè¾“å‡ºæœç´¢è¯ï¼Œæ— æ•°æ®ï¼ŒæŸ¥æ‰¾æ–‡ä»¶
 	else
-		return QueryResult(sought, loc->second, file); //ÕÒµ½ÁË£¬Êä³öËÑË÷´Ê£¬³öÏÖ´ÎÊı£¬²éÕÒÎÄ¼ş
+		return QueryResult(sought, loc->second, file); //æ‰¾åˆ°äº†ï¼Œè¾“å‡ºæœç´¢è¯ï¼Œå‡ºç°æ¬¡æ•°ï¼ŒæŸ¥æ‰¾æ–‡ä»¶
 }
 
-ostream &print(ostream &os, const QueryResult &qr)  //ÓÃÓÚ´òÓ¡Êı¾İ
+ostream &print(ostream &os, const QueryResult &qr)  //ç”¨äºæ‰“å°æ•°æ®
 {
 	os << qr.sought << " occurs " << qr.lines->size() << " " << (qr.lines->size() > 1 ? "times" : "time") << endl;
 	for (auto num : *qr.lines)
@@ -83,7 +83,7 @@ ostream &print(ostream &os, const QueryResult &qr)  //ÓÃÓÚ´òÓ¡Êı¾İ
 	return os;
 }
 
-void runQueries(ifstream &infile)  //Í³³ïº¯Êı£¬ÓÃÓÚÊäÈëÊı¾İ£¬ÒÔ¼°Ê¹Æä¼ÆËã¼Ó´òÓ¡
+void runQueries(ifstream &infile)  //ç»Ÿç­¹å‡½æ•°ï¼Œç”¨äºè¾“å…¥æ•°æ®ï¼Œä»¥åŠä½¿å…¶è®¡ç®—åŠ æ‰“å°
 {
 	TextQuery tq(infile);
 	while (true)
@@ -95,23 +95,41 @@ void runQueries(ifstream &infile)  //Í³³ïº¯Êı£¬ÓÃÓÚÊäÈëÊı¾İ£¬ÒÔ¼°Ê¹Æä¼ÆËã¼Ó´òÓ¡
 	}
 }
 
-class history
+class history    //historyç±»ï¼ŒrunQuerieså‡½æ•°ï¼Œcheck_historyå‡½æ•°ï¼ŒRunå‡½æ•°ï¼Œæ˜¯ç»„æˆå†å²ç³»ç»Ÿçš„ä¸»è¦éƒ¨åˆ†
 {
 public:
 	friend void runQueries(ifstream &, history &);
-	static int num;
+	int num = 1;
 	map<int, QueryResult> his;
+	history &operator+=(history &add)   //è¿ç®—ç¬¦çš„å®šä¹‰ï¼Œä½†è¿˜æ˜¯ç•¥æœ‰é—®é¢˜
+	{
+		for (auto &s : add.his)
+		{
+			his.insert({ num, s.second });
+			++num;
+		}
+		return *this;
+	}
 };
-int history::num = 1;
 
-void runQueries(ifstream &infile,history &h)  //Í³³ïº¯Êı£¬ÓÃÓÚÊäÈëÊı¾İ£¬ÒÔ¼°Ê¹Æä¼ÆËã¼Ó´òÓ¡
+history add(history &temp1, const history &temp2)
 {
-	cin.clear();
-	TextQuery tq(infile);
+	for (auto &s : temp2.his)
+	{
+		(temp1.his).insert({ temp1.num, s.second });
+		++temp1.num;
+	}
+	return temp1;
+}
+
+void runQueries(ifstream &infile,history &h)  //ç»Ÿç­¹å‡½æ•°ï¼Œç”¨äºè¾“å…¥æ•°æ®ï¼Œä»¥åŠä½¿å…¶è®¡ç®—åŠ æ‰“å°
+{
+	const static TextQuery tq(infile);   //const static é™æ€å®šå€¼ï¼Œä¿è¯å…¶tqç¨³å®š
 	while (true)
 	{
-		cin.clear();
 		cout << "enter a word to look for,or q to quit: ";
+		cin.ignore(INT_MAX, '\n');
+		//TextQuery tq(infile);
 		string s;
 		if (!(cin >> s) || s == "q") break;
 		print(cout, tq.query(s)) << endl;
@@ -122,29 +140,45 @@ void runQueries(ifstream &infile,history &h)  //Í³³ïº¯Êı£¬ÓÃÓÚÊäÈëÊı¾İ£¬ÒÔ¼°Ê¹Æä
 
 void check_history(history &h)
 {
-	cin.clear();
-	cout << "do you want to check the history? : (yes/no) ";
-	string s;
-	if (!(cin >> s) || s == "no") return;
 	while (true)
 	{
-		cin.clear();
-		cout << "enter a number of history or other to quit: ";
-		int number;
+		cout << "enter a number of history or 0 to quit: ";
+		cin.ignore(INT_MAX, '\n');
+		size_t number;
 		if (!(cin >> number) || number == 0) break;
 		auto temp = (h.his).find(number);
 		auto limit = (h.his).size();
 		if (number > limit)
 		{
 			cout << "out of range!" << endl;
-			cin.clear();
 		}
 		else
 		{
 			cout << temp->first << " # ";
 			print(cout, temp->second);
-			cin.clear();
 		}
+	}
+}
+
+void Run(history &h, ifstream &in)
+{
+	while (true)
+	{
+		cout << "press other to use this program,or out to quit: ";
+		//cin.ignore(INT_MAX, '\n');
+		string s;
+		cin >> s;
+		if (s == "out")
+			break;
+		else
+		{
+			runQueries(in, h);
+			cout << endl;
+			check_history(h);
+			cout << endl;
+		}
+		cin.clear();
+		cin.ignore(INT_MAX, '\n');   //æ¸…ç©ºè¾“å…¥æµï¼Œä¿è¯èƒ½è¿›è¡Œä¸‹ä¸€æ­¥è¾“å…¥
 	}
 }
 
@@ -155,22 +189,22 @@ protected:
 	//using line_no = TextQuery::line_no;
 	virtual ~Query_base() = default;
 private:
-	virtual QueryResult eval(const TextQuery &) const = 0;  //ÓÃÓÚevalº¯Êı£¬·µ»ØÓëµ±Ç°QueryÆ¥ÅäµÄQueryResult
-	virtual string rep() const = 0;  //rep±íÊ¾²éÑ¯µÄstring
+	virtual QueryResult eval(const TextQuery &) const = 0;  //ç”¨äºevalå‡½æ•°ï¼Œè¿”å›ä¸å½“å‰QueryåŒ¹é…çš„QueryResult
+	virtual string rep() const = 0;  //repè¡¨ç¤ºæŸ¥è¯¢çš„string
 };
 
 class Query
 {
-	//Èı¸öÓÑÔª
+	//ä¸‰ä¸ªå‹å…ƒ
 	friend Query operator~(const Query &);
 	friend Query operator|(const Query &, const Query &);
 	friend Query operator&(const Query &, const Query &);
 public:
-	Query(const string &);   //¹¹½¨Ò»¸öĞÂµÄWordQuery
-	QueryResult eval(const TextQuery &t) const { return q->eval(t); }   //·µ»ØÓëµ±Ç°QueryÆ¥ÅäµÄQueryResult
-	string rep() const { cout << "QueryµÄrep()" << endl; return q->rep(); }
+	Query(const string &);   //æ„å»ºä¸€ä¸ªæ–°çš„WordQuery
+	QueryResult eval(const TextQuery &t) const { return q->eval(t); }   //è¿”å›ä¸å½“å‰QueryåŒ¹é…çš„QueryResult
+	string rep() const { cout << "Queryçš„rep()" << endl; return q->rep(); }
 private:
-	Query(shared_ptr<Query_base> query) :q(query){ cout << "Query²ÎÊıÄ¬ÈÏ¹¹Ôìº¯Êı" << endl; }  //²ÎÊıÄ¬ÈÏ¹¹Ôìº¯Êı
+	Query(shared_ptr<Query_base> query) :q(query){ cout << "Queryå‚æ•°é»˜è®¤æ„é€ å‡½æ•°" << endl; }  //å‚æ•°é»˜è®¤æ„é€ å‡½æ•°
 	shared_ptr<Query_base> q;
 };
 
@@ -182,29 +216,29 @@ ostream &operator<<(ostream &os, const Query &query)
 class WordQuery :public Query_base
 {
 	friend class Query;
-	WordQuery(const string &s) :query_word(s) { cout << "WordQuery²ÎÊıÄ¬ÈÏ¹¹Ôìº¯Êı" << endl; }   //²ÎÊıÄ¬ÈÏ¹¹Ôìº¯Êı
-	QueryResult eval(const TextQuery &t) const { return t.query(query_word); }  //¶¨ÒåĞéº¯Êı
-	string rep() const { cout << "WordQueryµÄrep()" << endl; return query_word;}   //¶¨ÒåĞéº¯Êı
+	WordQuery(const string &s) :query_word(s) { cout << "WordQueryå‚æ•°é»˜è®¤æ„é€ å‡½æ•°" << endl; }   //å‚æ•°é»˜è®¤æ„é€ å‡½æ•°
+	QueryResult eval(const TextQuery &t) const { return t.query(query_word); }  //å®šä¹‰è™šå‡½æ•°
+	string rep() const { cout << "WordQueryçš„rep()" << endl; return query_word;}   //å®šä¹‰è™šå‡½æ•°
 	string query_word; 
 };
-inline Query::Query(const string &s):q(new WordQuery(s)){}  //¶ÔÓ¦QuoteÖĞ½¨Á¢¶ÔÓ¦µÄº¯Êı£º½¨Á¢Ò»¸öĞÂµÄword_query
+inline Query::Query(const string &s):q(new WordQuery(s)){}  //å¯¹åº”Quoteä¸­å»ºç«‹å¯¹åº”çš„å‡½æ•°ï¼šå»ºç«‹ä¸€ä¸ªæ–°çš„word_query
 
 class NotQuery : public Query_base
 {
 	friend Query operator~ (const Query &);
-	NotQuery(const Query &q) :query(q){ cout << "NotQuery²ÎÊıÄ¬ÈÏ¹¹Ôìº¯Êı" << endl; }  //²ÎÊıÄ¬ÈÏ¹¹Ôìº¯Êı
+	NotQuery(const Query &q) :query(q){ cout << "NotQueryå‚æ•°é»˜è®¤æ„é€ å‡½æ•°" << endl; }  //å‚æ•°é»˜è®¤æ„é€ å‡½æ•°
 	QueryResult eval(const TextQuery &) const;
-	string rep() const { cout << "NotQueryµÄrep()" << endl; return "~(" + query.rep() + ")";}
+	string rep() const { cout << "NotQueryçš„rep()" << endl; return "~(" + query.rep() + ")";}
 	Query query;
 };
 inline Query operator~(const Query &operand) { return shared_ptr<Query_base>(new NotQuery(operand)); }
 QueryResult NotQuery::eval(const TextQuery& text) const
 {
-	auto result = query.eval(text);  //Í¨¹ıQueryÔËËã¶ÔÏó¶Ôeval½øĞĞĞéµ÷ÓÃ£¬Õâ¸öresultÊÇQueryResultµÄ¶ÔÏó
-	auto ret_lines = make_shared<set<line_no>>();  //ÕâÊÇÒ»¸ö¿ÕµÄset
-	auto beg = result.begin(), end = result.end();  //begÊÇÖ¸Ëù²éµ¥´ÊµÄ³öÏÖĞĞºÅbeginµü´úÆ÷£¬end¼´endµü´úÆ÷
-	auto sz = result.get_file()->size();  //µÃµ½ÊäÈëÎÄ¼şµÄsize´óĞ¡
-	for (size_t n = 0; n != sz; n++)   //Ò»µ©·¢ÏÖ¸ÃĞĞ²»ÔÚresultÖĞ£¬Ôò½«ÆäÌí¼Óµ½ret_linesÖĞ
+	auto result = query.eval(text);  //é€šè¿‡Queryè¿ç®—å¯¹è±¡å¯¹evalè¿›è¡Œè™šè°ƒç”¨ï¼Œè¿™ä¸ªresultæ˜¯QueryResultçš„å¯¹è±¡
+	auto ret_lines = make_shared<set<line_no>>();  //è¿™æ˜¯ä¸€ä¸ªç©ºçš„set
+	auto beg = result.begin(), end = result.end();  //begæ˜¯æŒ‡æ‰€æŸ¥å•è¯çš„å‡ºç°è¡Œå·beginè¿­ä»£å™¨ï¼Œendå³endè¿­ä»£å™¨
+	auto sz = result.get_file()->size();  //å¾—åˆ°è¾“å…¥æ–‡ä»¶çš„sizeå¤§å°
+	for (size_t n = 0; n != sz; n++)   //ä¸€æ—¦å‘ç°è¯¥è¡Œä¸åœ¨resultä¸­ï¼Œåˆ™å°†å…¶æ·»åŠ åˆ°ret_linesä¸­
 	{
 		if (beg == end || *beg != n)
 			ret_lines->insert(n);
@@ -218,9 +252,9 @@ QueryResult NotQuery::eval(const TextQuery& text) const
 class BinaryQuery :public Query_base
 {
 protected:
-	BinaryQuery(const Query &l, const Query &r, string s) :lhs(l), rhs(r), opSym(s) { cout << "BinaryQuery²ÎÊıÄ¬ÈÏ¹¹Ôìº¯Êı" << endl; }
-	//³éÏóÀà£ºBinaryQuote²»¶¨Òåeval
-	string rep() const { cout << "BinaryQueryµÄrep()" << endl; return "(" + lhs.rep() + " " + opSym + " " + rhs.rep() + ")"; }
+	BinaryQuery(const Query &l, const Query &r, string s) :lhs(l), rhs(r), opSym(s) { cout << "BinaryQueryå‚æ•°é»˜è®¤æ„é€ å‡½æ•°" << endl; }
+	//æŠ½è±¡ç±»ï¼šBinaryQuoteä¸å®šä¹‰eval
+	string rep() const { cout << "BinaryQueryçš„rep()" << endl; return "(" + lhs.rep() + " " + opSym + " " + rhs.rep() + ")"; }
 	Query lhs, rhs;
 	string opSym;
 };
@@ -228,8 +262,8 @@ protected:
 class AndQuery :public BinaryQuery
 {
 	friend Query operator &(const Query&, const Query &);
-	AndQuery(const Query &left, const Query &right) :BinaryQuery(left, right, "&"){ cout << "AndQuery²ÎÊıÄ¬ÈÏ¹¹Ôìº¯Êı" << endl; }
-	//¾ßÌåµÄÀà£ºAndQuery¼Ì³ĞÁËrep²¢ÇÒ¶¨ÓÚÁËÆäËûĞéº¯Êı
+	AndQuery(const Query &left, const Query &right) :BinaryQuery(left, right, "&"){ cout << "AndQueryå‚æ•°é»˜è®¤æ„é€ å‡½æ•°" << endl; }
+	//å…·ä½“çš„ç±»ï¼šAndQueryç»§æ‰¿äº†repå¹¶ä¸”å®šäºäº†å…¶ä»–è™šå‡½æ•°
 	QueryResult eval(const TextQuery &) const;
 };
 inline Query operator&(const Query &lhs, const Query &rhs) { return shared_ptr<Query_base>(new AndQuery(lhs, rhs)); }
@@ -237,7 +271,7 @@ QueryResult AndQuery::eval(const TextQuery &text) const
 {
 	auto left = lhs.eval(text), right = rhs.eval(text);
 	auto ret_lines = make_shared<set<line_no>>();
-	//Ê¹ÓÃ±ê×¼¿âËã·¨À´ºÏ²¢Á½¸öleftÓërightÖĞ´æ·ÅĞĞÊıµÄset
+	//ä½¿ç”¨æ ‡å‡†åº“ç®—æ³•æ¥åˆå¹¶ä¸¤ä¸ªleftä¸rightä¸­å­˜æ”¾è¡Œæ•°çš„set
 	set_intersection(left.begin(), left.end(), right.begin(), right.end(), inserter(*ret_lines, ret_lines->begin()));
 	return QueryResult(rep(), ret_lines, left.get_file());
 }
@@ -245,8 +279,8 @@ QueryResult AndQuery::eval(const TextQuery &text) const
 class OrQuery :public BinaryQuery
 {
 	friend Query operator|(const Query&, const Query &);
-	OrQuery(const Query &left, const Query &right) :BinaryQuery(left, right, "|") { cout << "OrQuery²ÎÊıÄ¬ÈÏ¹¹Ôìº¯Êı" << endl; }
-	//¾ßÌåµÄÀà£ºAndQuery¼Ì³ĞÁËrep²¢ÇÒ¶¨ÓÚÁËÆäËûĞéº¯Êı
+	OrQuery(const Query &left, const Query &right) :BinaryQuery(left, right, "|") { cout << "OrQueryå‚æ•°é»˜è®¤æ„é€ å‡½æ•°" << endl; }
+	//å…·ä½“çš„ç±»ï¼šAndQueryç»§æ‰¿äº†repå¹¶ä¸”å®šäºäº†å…¶ä»–è™šå‡½æ•°
 	QueryResult eval(const TextQuery &) const;
 };
 inline Query operator|(const Query &lhs, const Query &rhs) { return shared_ptr<Query_base>(new OrQuery(lhs, rhs)); }
@@ -254,11 +288,11 @@ QueryResult OrQuery::eval(const TextQuery &text) const
 {
 	auto right = rhs.eval(text), left = lhs.eval(text);
 	auto ret_lines = make_shared<set<line_no>>(left.begin(), left.end());
-	ret_lines->insert(right.begin(), right.end());   //°ÑÁ½¸ö¼ÓÔÚÒ»Æğ
+	ret_lines->insert(right.begin(), right.end());   //æŠŠä¸¤ä¸ªåŠ åœ¨ä¸€èµ·
 	return QueryResult(rep(), ret_lines, left.get_file());
 }
 
-ostream &print_qr(ostream &os, const Query &q, ifstream &infile)  //ÓÃÓÚ´òÓ¡Êı¾İ
+ostream &print_qr(ostream &os, const Query &q, ifstream &infile)  //ç”¨äºæ‰“å°æ•°æ®
 {
 	auto qr = q.eval(TextQuery(infile));
 	os << qr.sought << " occurs " << qr.lines->size() << " " << (qr.lines->size() > 1 ? "times" : "time") << endl;
@@ -267,7 +301,7 @@ ostream &print_qr(ostream &os, const Query &q, ifstream &infile)  //ÓÃÓÚ´òÓ¡Êı¾İ
 	return os;
 }
 
-//void runQueries(ifstream &infile)  //Í³³ïº¯Êı£¬ÓÃÓÚÊäÈëÊı¾İ£¬ÒÔ¼°Ê¹Æä¼ÆËã¼Ó´òÓ¡
+//void runQueries(ifstream &infile)  //ç»Ÿç­¹å‡½æ•°ï¼Œç”¨äºè¾“å…¥æ•°æ®ï¼Œä»¥åŠä½¿å…¶è®¡ç®—åŠ æ‰“å°
 //{
 //	TextQuery tq(infile);
 //	while (true)
