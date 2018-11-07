@@ -167,6 +167,9 @@
     <ClCompile Include="15.7.3_Test.cpp" />
     <ClCompile Include="15.8_Test.cpp" />
     <ClCompile Include="15.9.3._Test.cpp" />
+    <ClCompile Include="16.1.1_Test.cpp" />
+    <ClCompile Include="16.1.2_Test.cpp" />
+    <ClCompile Include="16.1.3_Test.cpp" />
     <ClCompile Include="2.1.2_Test.cpp" />
     <ClCompile Include="2.1.3_Test.cpp" />
     <ClCompile Include="2.3.2_Test.cpp" />
@@ -271,6 +274,8 @@
     <Text Include="outodd.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Blob_MB.h" />
+    <ClInclude Include="Blob_MB_Copy.h" />
     <ClInclude Include="Ch_6.h" />
     <ClInclude Include="Ch_7.h" />
     <ClInclude Include="HasPtr.h" />
@@ -279,10 +284,13 @@
     <ClInclude Include="Quote.h" />
     <ClInclude Include="Sales_data.h" />
     <ClInclude Include="Sales_item.h" />
+    <ClInclude Include="Screen.h" />
+    <ClInclude Include="Screen_MB.h" />
     <ClInclude Include="Shape.h" />
     <ClInclude Include="StrBlob.h" />
     <ClInclude Include="String.h" />
     <ClInclude Include="StrVec.h" />
+    <ClInclude Include="StrVec_MB_Copy.h" />
     <ClInclude Include="Tree.h" />
     <ClInclude Include="Version_test.h" />
   </ItemGroup>

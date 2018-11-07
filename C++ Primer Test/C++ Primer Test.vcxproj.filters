@@ -67,6 +67,9 @@
     <Filter Include="源文件\Part 3\Ch15_Test">
       <UniqueIdentifier>{6da6a1d3-b260-483a-b392-e8563b49a5aa}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\Part 3\Ch16_Test">
+      <UniqueIdentifier>{472113bc-8005-4875-a24c-328c1d90dd85}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="10.4.3_Test.cpp">
@@ -480,6 +483,15 @@
     <ClCompile Include="EX222.cpp">
       <Filter>源文件\Part 3\Ch15_Test</Filter>
     </ClCompile>
+    <ClCompile Include="16.1.1_Test.cpp">
+      <Filter>源文件\Part 3\Ch16_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="16.1.2_Test.cpp">
+      <Filter>源文件\Part 3\Ch16_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="16.1.3_Test.cpp">
+      <Filter>源文件\Part 3\Ch16_Test</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="file1.txt">
@@ -557,6 +569,21 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Query.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Blob_MB.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Blob_MB_Copy.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Screen.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Screen_MB.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="StrVec_MB_Copy.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
