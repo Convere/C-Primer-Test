@@ -70,6 +70,12 @@
     <Filter Include="源文件\Part 3\Ch16_Test">
       <UniqueIdentifier>{472113bc-8005-4875-a24c-328c1d90dd85}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\Part 4">
+      <UniqueIdentifier>{7d4b8d61-d291-471c-9b8b-67eeb61d35f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Part 4\Ch17_Test">
+      <UniqueIdentifier>{4ca4511f-59e8-45a0-9ab2-f63223f3b7cb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="10.4.3_Test.cpp">
@@ -491,6 +497,27 @@
     </ClCompile>
     <ClCompile Include="16.1.3_Test.cpp">
       <Filter>源文件\Part 3\Ch16_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="16.1.4_Test.cpp">
+      <Filter>源文件\Part 3\Ch16_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="16.1.5_Test.cpp">
+      <Filter>源文件\Part 3\Ch16_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="16.1.6_Test.cpp">
+      <Filter>源文件\Part 3\Ch16_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="17.1.1_Test.cpp">
+      <Filter>源文件\Part 4\Ch17_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="17.1.2_Test.cpp">
+      <Filter>源文件\Part 4\Ch17_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="17.4.1_Test.cpp">
+      <Filter>源文件\Part 4\Ch17_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="17.5.1_Test.cpp">
+      <Filter>源文件\Part 4\Ch17_Test</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

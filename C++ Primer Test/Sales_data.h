@@ -20,6 +20,7 @@ public:
 											 //构造函数即以上
 	Sales_data &operator+=(const Sales_data &);
 	Sales_data &operator=(const string &ISBN);
+	bool compareIsbn (const Sales_data &lhs, const Sales_data &rhs) { return lhs.isbn() < rhs.isbn(); }
 	explicit operator string() const { return bookNo; }
 	explicit operator double() const { return avg_price(); }
 private:

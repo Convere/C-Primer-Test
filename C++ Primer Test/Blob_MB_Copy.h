@@ -53,6 +53,7 @@ public:
 
 	Blob() : data(make_shared<vector<T>>()) {}
 	Blob(initializer_list<T> il) : data(make_shared<vector<T>>(il)) {}
+	template<typename IT> Blob(IT it1, IT it2) : data(make_shared<vector<T>>(it1, it2)) {}  //Á·Ï°16.24
 
 	Blob(const Blob<T>& lhs) : data(make_shared<vector<T>>(*lhs.data)) {}
 	Blob& operator=(const Blob<T>&);
@@ -81,7 +82,7 @@ public:
 	const T& front() const;
 	const T& back() const;
 
-private:
+//private:
 	void check(size_type, const T&) const;
 
 	shared_ptr<vector<T>> data;
