@@ -516,9 +516,6 @@
     <ClCompile Include="17.4.1_Test.cpp">
       <Filter>源文件\Part 4\Ch17_Test</Filter>
     </ClCompile>
-    <ClCompile Include="17.5.1_Test.cpp">
-      <Filter>源文件\Part 4\Ch17_Test</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="file1.txt">
