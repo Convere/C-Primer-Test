@@ -178,6 +178,12 @@
     <ClCompile Include="17.4.1_Test.cpp" />
     <ClCompile Include="18.1.5_Test.cpp" />
     <ClCompile Include="18.2.1_Test.cpp" />
+    <ClCompile Include="18.2.2_Test.cpp" />
+    <ClCompile Include="18.2.4_Test.cpp" />
+    <ClCompile Include="18.3.2_Test.cpp" />
+    <ClCompile Include="18.3.3_Test.cpp" />
+    <ClCompile Include="18.3.5_Test.cpp" />
+    <ClCompile Include="19.1.1_Test.cpp" />
     <ClCompile Include="2.1.2_Test.cpp" />
     <ClCompile Include="2.1.3_Test.cpp" />
     <ClCompile Include="2.3.2_Test.cpp" />
