@@ -82,6 +82,9 @@
     <Filter Include="源文件\Part 4\Ch19_Test">
       <UniqueIdentifier>{819347c3-8fc0-48a9-9b98-40b70ebc70c5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\Paractice">
+      <UniqueIdentifier>{0c20e907-b144-4a2e-8973-31c9a8f4cd86}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="10.4.3_Test.cpp">
@@ -545,6 +548,12 @@
     </ClCompile>
     <ClCompile Include="19.1.1_Test.cpp">
       <Filter>源文件\Part 4\Ch19_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="水仙花数.cpp">
+      <Filter>源文件\Paractice</Filter>
+    </ClCompile>
+    <ClCompile Include="Shape类派生.cpp">
+      <Filter>源文件\Paractice</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

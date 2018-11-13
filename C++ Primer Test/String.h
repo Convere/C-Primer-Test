@@ -133,14 +133,14 @@ void String::free()
 	}
 }
 
-void foo(String x)  //这里没有用引用，所以会直接赋值
+void foo(String x)  //这里为赋值，调用了拷贝构造函数
 {
 	for (auto &s : x)
 		cout << s;
 	cout << endl;
 }
 
-void bar(const String& x)  //这里调用了一次拷贝构造函数
+void bar(const String& x)  //这里是引用，没有进行赋值操作
 {
 	for (auto &s : x)
 		cout << s;
