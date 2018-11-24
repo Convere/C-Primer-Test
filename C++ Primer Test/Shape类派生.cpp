@@ -26,7 +26,7 @@ class Rectangle : public Shape
 {
 public:
 	Rectangle() = default;
-	Rectangle(double a, double b) : width(a), longth(b) {};
+	Rectangle(double a, double b) : width(a), longth(b) {}
 	Rectangle(const Rectangle &temp) : width(temp.width), longth(temp.longth) {}
 	double Area() override { return width*longth; }
 	~Rectangle()override {}

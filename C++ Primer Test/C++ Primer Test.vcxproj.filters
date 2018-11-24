@@ -85,6 +85,9 @@
     <Filter Include="源文件\Paractice">
       <UniqueIdentifier>{0c20e907-b144-4a2e-8973-31c9a8f4cd86}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\Paractice\数据结构编程题">
+      <UniqueIdentifier>{c55c3597-1bd5-497d-a612-a03c75755aa3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="10.4.3_Test.cpp">
@@ -554,6 +557,12 @@
     </ClCompile>
     <ClCompile Include="Shape类派生.cpp">
       <Filter>源文件\Paractice</Filter>
+    </ClCompile>
+    <ClCompile Include="2014分析题.cpp">
+      <Filter>源文件\Paractice</Filter>
+    </ClCompile>
+    <ClCompile Include="范围查询.cpp">
+      <Filter>源文件\Paractice\数据结构编程题</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

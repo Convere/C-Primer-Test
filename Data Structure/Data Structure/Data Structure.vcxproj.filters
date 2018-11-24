@@ -19,6 +19,12 @@
     <Filter Include="源文件\Ch2_Practise">
       <UniqueIdentifier>{da880afe-e21c-4f9d-b666-b39e0974c8a1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\Ch3_Practise">
+      <UniqueIdentifier>{0493e651-7e1c-494d-9405-7453b5d0be68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Ch4_Practise">
+      <UniqueIdentifier>{a25684bf-e17f-401c-816e-762bef42c750}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="bubblesort1A.cpp">
@@ -33,6 +39,18 @@
     <ClCompile Include="binsearch and fibsearch.cpp">
       <Filter>源文件\Ch2_Practise</Filter>
     </ClCompile>
+    <ClCompile Include="Mergesort.cpp">
+      <Filter>源文件\Ch2_Practise</Filter>
+    </ClCompile>
+    <ClCompile Include="列表排序算法.cpp">
+      <Filter>源文件\Ch3_Practise</Filter>
+    </ClCompile>
+    <ClCompile Include="EX.cpp">
+      <Filter>源文件\Ch3_Practise</Filter>
+    </ClCompile>
+    <ClCompile Include="进制转换.cpp">
+      <Filter>源文件\Ch4_Practise</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Ch1.h">
@@ -42,6 +60,15 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Fib.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Ch3.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="listNode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Ch4.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

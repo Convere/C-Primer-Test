@@ -192,6 +192,7 @@
     <ClCompile Include="2.6.1_Test.cpp" />
     <ClCompile Include="2.6.2_Test.cpp" />
     <ClCompile Include="2.6.3_Test.cpp" />
+    <ClCompile Include="2014分析题.cpp" />
     <ClCompile Include="3.2.2_Test.cpp" />
     <ClCompile Include="3.2.3_Test.cpp" />
     <ClCompile Include="3.2_EX.cpp" />
@@ -275,6 +276,7 @@
     <ClCompile Include="Shape类派生.cpp" />
     <ClCompile Include="水仙花数.cpp" />
     <ClCompile Include="源.cpp" />
+    <ClCompile Include="范围查询.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="8.3.1.txt" />

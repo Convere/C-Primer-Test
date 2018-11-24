@@ -21,13 +21,20 @@
   <ItemGroup>
     <ClCompile Include="binsearch and fibsearch.cpp" />
     <ClCompile Include="bubblesort1A.cpp" />
+    <ClCompile Include="EX.cpp" />
     <ClCompile Include="Longest Common Subsequence.cpp" />
+    <ClCompile Include="Mergesort.cpp" />
     <ClCompile Include="traverse and add.cpp" />
+    <ClCompile Include="列表排序算法.cpp" />
+    <ClCompile Include="进制转换.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Ch1.h" />
     <ClInclude Include="Ch2.h" />
+    <ClInclude Include="Ch3.h" />
+    <ClInclude Include="Ch4.h" />
     <ClInclude Include="Fib.h" />
+    <ClInclude Include="listNode.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{7F63F79C-8A70-423C-9578-D84ACC94DEF5}</ProjectGuid>
