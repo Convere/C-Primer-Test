@@ -87,6 +87,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <AdditionalOptions>-D_SCL_SECURE_NO_WARNINGS %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions); _CRT_SECURE_NO_DEPRECATE</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -276,6 +277,9 @@
     <ClCompile Include="Shape类派生.cpp" />
     <ClCompile Include="水仙花数.cpp" />
     <ClCompile Include="源.cpp" />
+    <ClCompile Include="祖玛.cpp" />
+    <ClCompile Include="祖玛2.cpp" />
+    <ClCompile Include="祖玛_list.cpp" />
     <ClCompile Include="范围查询.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -290,6 +294,7 @@
     <Text Include="map_file.txt" />
     <Text Include="outeven.txt" />
     <Text Include="outodd.txt" />
+    <Text Include="祖玛输入文件.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Blob_MB.h" />

@@ -564,6 +564,15 @@
     <ClCompile Include="范围查询.cpp">
       <Filter>源文件\Paractice\数据结构编程题</Filter>
     </ClCompile>
+    <ClCompile Include="祖玛_list.cpp">
+      <Filter>源文件\Paractice\数据结构编程题</Filter>
+    </ClCompile>
+    <ClCompile Include="祖玛.cpp">
+      <Filter>源文件\Paractice\数据结构编程题</Filter>
+    </ClCompile>
+    <ClCompile Include="祖玛2.cpp">
+      <Filter>源文件\Paractice\数据结构编程题</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="file1.txt">
@@ -598,6 +607,9 @@
     </Text>
     <Text Include="Alice_Emma.txt">
       <Filter>源文件\Part 3\Ch15_Test</Filter>
+    </Text>
+    <Text Include="祖玛输入文件.txt">
+      <Filter>源文件\Paractice\数据结构编程题</Filter>
     </Text>
   </ItemGroup>
   <ItemGroup>
