@@ -18,17 +18,14 @@ class Shape_2D :public Shape
 {
 public:
 	Shape_2D() = default;
-	Shape_2D(float x, float y) : x_(x), y_(y) {}
-
+	//Shape_2D(float x, float y) : x_(x), y_(y) {}
 	virtual float area() const = 0;
 	virtual float diameter() const = 0;
 	virtual float circumference() const = 0;
-
 	virtual ~Shape_2D() override {}
-
-protected:
-	float x_ = 0.0;
-	float y_ = 0.0;
+//protected:
+//	float x_ ;
+//	float y_ ;
 };
 
 class Shape_3D :public Shape

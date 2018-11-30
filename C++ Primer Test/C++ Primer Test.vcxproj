@@ -193,6 +193,8 @@
     <ClCompile Include="2.6.1_Test.cpp" />
     <ClCompile Include="2.6.2_Test.cpp" />
     <ClCompile Include="2.6.3_Test.cpp" />
+    <ClCompile Include="2007分析题.cpp" />
+    <ClCompile Include="2008分析题.cpp" />
     <ClCompile Include="2014分析题.cpp" />
     <ClCompile Include="3.2.2_Test.cpp" />
     <ClCompile Include="3.2.3_Test.cpp" />
@@ -273,6 +275,7 @@
     <ClCompile Include="12.2.1_Test.cpp" />
     <ClCompile Include="12.2.2_Test.cpp" />
     <ClCompile Include="12.3.1_Test.cpp" />
+    <ClCompile Include="EX.cpp" />
     <ClCompile Include="EX222.cpp" />
     <ClCompile Include="Shape类派生.cpp" />
     <ClCompile Include="水仙花数.cpp" />

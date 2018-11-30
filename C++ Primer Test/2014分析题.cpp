@@ -1,4 +1,6 @@
 #include<iostream>
+#include<string>
+#include<stdio.h>
 using namespace std;
 
 /*分析题1*/
@@ -128,7 +130,72 @@ int main4()
 		case 'd':
 			continue;
 		}
+		cout << "#" << endl;
 	}
-	cout << "#" << endl;
 	return 0;
+}
+
+/*分析题5*/
+class Base
+{
+private:
+	char* name;
+public:
+	Base(char* className)  //默认构造函数
+	{
+		name = new char[strlen(className) + 1];
+		strcpy(name, className);
+	}
+	//~Base() { delete name; }
+	~Base() { cout << "析构函数调用" << endl; }   //上述为原析构函数，删除了不该删除的成员name，其并不是动态内存，故去掉删除的内容
+	char* copyName()
+	{
+		//char newname[256];
+		char* newname = new char[256];    //修改后语句，原文为上，没有用新内存存储数据，修改为new存储
+		strcpy(newname, name);
+		return newname;
+	}
+	char* getName() { return name; }
+	static void print(Base base)
+	{
+		printf("name: %s\n", base.name);
+	}
+};
+
+class Subclass :public Base
+{
+public:
+	Subclass(char* className) :Base(className) {}
+};
+
+int main5()
+{
+	Base* pBase = new Subclass("text");
+	Base::print(*pBase);  //这玩意会调用析构函数！因为此时系统认为此类已经使用完毕！
+	printf("name: %s\n", pBase->getName());  //析构函数此时已被调用
+	printf("name: %s\n", pBase->copyName());
+	return 0;
+}
+
+/*2015分析题1*/
+void main()
+{
+	int a[7] = { 1,5,2,3,4,1,2 };
+	for (int i = 0; i<7; i++)
+	{
+		switch (a[i])
+		{
+		case 1:
+			cout << "%";
+			continue;
+		case 2:
+			cout << "$";
+		case 3:
+			cout << "*";
+			break;
+		case 4:
+			continue;
+		}
+		cout << "#" << endl;
+	}
 }

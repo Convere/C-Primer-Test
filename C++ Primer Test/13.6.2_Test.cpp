@@ -1,11 +1,16 @@
 //#include <iostream>  
 //#include <vector>
+//#include <time.h>
 //#include "String.h"
 //#include "HasPtr.h"
 //using namespace std;
 //
 //int main() //练习13.50   //增加了移动构造函数，	其几乎大量覆盖了原有的拷贝构造函数
 //{
+//	clock_t start, finish;
+//	double totaltime;
+//	start = clock();
+//
 //	String s0;
 //	String s1("hello");
 //	String s2(s0);
@@ -60,10 +65,15 @@
 //		cout << " " << s.size() << " ";
 //	}
 //	cout << endl;
+//
+//
+//	finish = clock();
+//	totaltime = (double)(finish - start) / CLOCKS_PER_SEC;
+//	cout << "\n此程序的运行时间为" << totaltime << "秒！" << endl;
 //	return 0;
 //}
 //
-//int main2()   //练习13.53
+//int main222222()   //练习13.53
 //{
 //	HasPtr a;
 //	HasPtr b("me");

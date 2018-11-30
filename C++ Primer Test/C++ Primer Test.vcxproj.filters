@@ -573,6 +573,15 @@
     <ClCompile Include="祖玛2.cpp">
       <Filter>源文件\Paractice\数据结构编程题</Filter>
     </ClCompile>
+    <ClCompile Include="EX.cpp">
+      <Filter>源文件\Paractice\数据结构编程题</Filter>
+    </ClCompile>
+    <ClCompile Include="2007分析题.cpp">
+      <Filter>源文件\Paractice</Filter>
+    </ClCompile>
+    <ClCompile Include="2008分析题.cpp">
+      <Filter>源文件\Paractice</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="file1.txt">
