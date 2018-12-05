@@ -171,14 +171,23 @@ public:
 int main5()
 {
 	Base* pBase = new Subclass("text");
-	Base::print(*pBase);  //这玩意会调用析构函数！因为此时系统认为此类已经使用完毕！
-	printf("name: %s\n", pBase->getName());  //析构函数此时已被调用
+	pBase->getName()[2] = 'X';
+	cout << pBase->getName() << endl;  //char *定义的数组，使用其下标只能访问，但是无法赋值；char[]类型的既可以访问，也可以赋值
+	char *a = "word";				   //但是不能一概而论，因为VS编译器的强大，对于此题中已经新建内存的char*类型的下标也是可以赋值的
+	char b[] = "word";
+	char c[10] = "word";
+	char d = 'word';
+	//a[2] = 'X';    //正常情况下，此操作无法进行，因为此时其数据存储在文本区，无法赋值
+	b[2] = 'X';
+	cout << a << b << c << d << endl;
+	Base::print(*pBase);  //这玩意会调用析构函数！(因为相当于直接调用了基类，所以此时系统认为此基类已经使用完毕！)
+	printf("name: %s\n", pBase->getName());  
 	printf("name: %s\n", pBase->copyName());
 	return 0;
 }
 
 /*2015分析题1*/
-void main()
+int main6()
 {
 	int a[7] = { 1,5,2,3,4,1,2 };
 	for (int i = 0; i<7; i++)
@@ -198,4 +207,5 @@ void main()
 		}
 		cout << "#" << endl;
 	}
+	return 0;
 }

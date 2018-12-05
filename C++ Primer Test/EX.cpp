@@ -228,3 +228,13 @@ int mainhwscal()
 	cout << sum << endl;
 	return 0;
 }
+
+//template<class T> T square(T x)
+//{
+//	return x*x;
+//}
+//
+//int main()
+//{
+//	cout << square(5) << endl;
+//}

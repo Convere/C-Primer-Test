@@ -15,17 +15,17 @@ using namespace std;
 char save[20004], temp[20004];
 int point, n;
 
-const int SZ = 1 << 20;  //快速io 提升输入输出速度
-struct fastio
-{
-	char inbuf[SZ];
-	char outbuf[SZ];
-	fastio()
-	{
-		setvbuf(stdin, inbuf, _IOFBF, SZ);
-		setvbuf(stdout, outbuf, _IOFBF, SZ);
-	}
-}io;
+//const int SZ = 1 << 20;  //快速io 提升输入输出速度
+//struct fastio
+//{
+//	char inbuf[SZ];
+//	char outbuf[SZ];
+//	fastio()
+//	{
+//		setvbuf(stdin, inbuf, _IOFBF, SZ);
+//		setvbuf(stdout, outbuf, _IOFBF, SZ);
+//	}
+//}io;
 
 int check(char* save, int &step)    //查询是否需要删除相关数据
 {

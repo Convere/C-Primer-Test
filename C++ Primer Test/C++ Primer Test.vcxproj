@@ -277,9 +277,12 @@
     <ClCompile Include="12.3.1_Test.cpp" />
     <ClCompile Include="EX.cpp" />
     <ClCompile Include="EX222.cpp" />
+    <ClCompile Include="列车调度(Train).cpp" />
+    <ClCompile Include="灯塔LightHouse.cpp" />
     <ClCompile Include="Shape类派生.cpp" />
     <ClCompile Include="水仙花数.cpp" />
     <ClCompile Include="源.cpp" />
+    <ClCompile Include="真二叉树重构(Proper Rebuild).cpp" />
     <ClCompile Include="祖玛.cpp" />
     <ClCompile Include="祖玛2.cpp" />
     <ClCompile Include="祖玛_list.cpp" />

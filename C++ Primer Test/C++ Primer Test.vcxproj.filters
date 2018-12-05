@@ -582,6 +582,15 @@
     <ClCompile Include="2008分析题.cpp">
       <Filter>源文件\Paractice</Filter>
     </ClCompile>
+    <ClCompile Include="灯塔LightHouse.cpp">
+      <Filter>源文件\Paractice\数据结构编程题</Filter>
+    </ClCompile>
+    <ClCompile Include="列车调度(Train).cpp">
+      <Filter>源文件\Paractice\数据结构编程题</Filter>
+    </ClCompile>
+    <ClCompile Include="真二叉树重构(Proper Rebuild).cpp">
+      <Filter>源文件\Paractice\数据结构编程题</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="file1.txt">

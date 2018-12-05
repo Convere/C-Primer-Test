@@ -25,7 +25,7 @@ int main_shuixianhua_1() //效果较为低下，需要循环900次  时间复杂度n的三次方
 
 int main_shuixianhua_2()
 {
-	for (int i = 100; i < 1000; i++)
+	for (int i = 100; i < 1000; i++)                                  
 	{
 		int a = i / 100;
 		int b = i % 100 / 10;
