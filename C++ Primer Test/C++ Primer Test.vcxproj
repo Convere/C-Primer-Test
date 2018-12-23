@@ -277,6 +277,7 @@
     <ClCompile Include="12.3.1_Test.cpp" />
     <ClCompile Include="EX.cpp" />
     <ClCompile Include="EX222.cpp" />
+    <ClCompile Include="WHUT题目测试.cpp" />
     <ClCompile Include="列车调度(Train).cpp" />
     <ClCompile Include="灯塔LightHouse.cpp" />
     <ClCompile Include="Shape类派生.cpp" />
