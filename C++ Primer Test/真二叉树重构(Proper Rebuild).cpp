@@ -79,7 +79,7 @@ void IN_Print(BinaryTree *Root)
 	IN_Print(Root->rson);
 }
 
-int main()
+int main_erchashu()
 {
 	scanf("%d", &PR_n);   //节点数量读入
 	for (int i = 0; i < PR_n; i++)

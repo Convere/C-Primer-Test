@@ -278,6 +278,7 @@
     <ClCompile Include="EX.cpp" />
     <ClCompile Include="EX222.cpp" />
     <ClCompile Include="列车调度(Train).cpp" />
+    <ClCompile Include="华为机试.cpp" />
     <ClCompile Include="灯塔LightHouse.cpp" />
     <ClCompile Include="Shape类派生.cpp" />
     <ClCompile Include="水仙花数.cpp" />
