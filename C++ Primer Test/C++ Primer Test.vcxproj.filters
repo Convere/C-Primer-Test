@@ -591,9 +591,6 @@
     <ClCompile Include="真二叉树重构(Proper Rebuild).cpp">
       <Filter>源文件\Paractice\数据结构编程题</Filter>
     </ClCompile>
-    <ClCompile Include="华为机试.cpp">
-      <Filter>源文件\Paractice</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="file1.txt">
