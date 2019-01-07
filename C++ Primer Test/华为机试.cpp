@@ -7,6 +7,7 @@
 #include <list>
 #include <forward_list>
 #include <math.h>
+#include <time.h>
 using namespace std;
 
 /*字符串最后一个单词的长度*/
@@ -488,7 +489,7 @@ int mainhw20()
 	return 0;
 }
 
-int main()
+int mainhw21212()
 {
 	int n;
 	while (cin >> n)
@@ -508,4 +509,138 @@ int main()
 		for (int i = 0; i < 10; i++)
 			cout << w[i] << " " << x[i] << endl;
 	}
+	return 0;
+}
+
+class A
+{
+public:
+	int *str;
+	A(const int &cstr = int()) :str(new int(cstr)) {}  //默认构造函数
+	A(const A &rhs) :str(new int(*rhs.str)){}
+};
+/*冒泡*/
+void bubblesort(int a[], int n)
+{
+	bool flag = false;
+	while (!flag)
+	{
+		flag = true;
+		for (int i = 0; i < n - 1; i++)
+		{
+			if (a[i] > a[i + 1])
+			{
+				swap(a[i], a[i + 1]);
+				flag = false;
+			}
+		}
+	}
+}
+/*快速*/
+int part(int save[], int lo, int hi)
+{
+	int p = save[lo];
+	while (lo < hi)
+	{
+		while ((lo < hi) && (p <= save[hi]))
+			hi--;
+		save[lo] = save[hi];
+		while ((lo < hi) && (p >= save[lo]))
+			lo++;
+		save[hi] = save[lo];
+	}
+	save[lo] = p;
+	return lo;
+}
+
+void quicksort(int save[], int lo, int hi)
+{
+	if (hi - lo < 2)return;
+	int mi = part(save, lo, hi - 1);
+	quicksort(save, lo, mi);
+	quicksort(save, mi + 1, hi);
+}
+
+/*插入*/
+void inser(int a[], int n)
+{
+	int i, j;
+	int tmp;
+	for (i = 1; i < n; i++)
+	{
+		tmp = a[i];
+		for (j = i; j > 0 && (a[j - 1] > tmp); j--)
+			//a[j] = a[j - 1];
+			swap(a[j], a[j - 1]);
+		//a[j] = tmp;
+	}
+}
+
+/*桶*/
+void tong(int a[], int n)
+{
+	int b[1000] = { 0 };
+	for (int i = 0; i < n; i++)
+		b[a[i]]++;
+	for (int i = 0; i < 1000; i++)
+		for (int j = 0; j < b[i]; j++)
+			cout << i << " ";
+	cout << endl;
+}
+
+
+void test2()
+{
+	double dur;
+	clock_t start, end;
+	start = clock();
+	end = clock();
+	dur = (double)(end - start);
+	printf("Use Time:%f\n", (dur / CLOCKS_PER_SEC));
+}
+
+int main()
+{
+	double dur;
+	clock_t start, end;
+	start = clock();
+	//A a;
+	//*a.str = 2;
+	//A a2(a);
+	//cout << *a.str << endl;
+	//cout << a.str << endl;
+	//cout << *a2.str << endl;
+	//cout << a2.str << endl;
+	//map<string, string> cidian;
+	//cidian.insert({ "yang","zitong" });
+	//cidian.insert({ "li","pengcheng" });
+	//cidian.insert({ "wen","zizhang" });
+	//for (auto &s : cidian)
+	//	cout << s.first << " " << s.second << endl;
+	//cidian.insert({ "yang","ZiTong" });
+	//for (auto &s : cidian)
+	//	cout << s.first << " " << s.second << endl;
+	//cidian["yang"] = "ZiTong";
+	//for (auto &s : cidian)
+	//	cout << s.first << " " << s.second << endl;
+	//string s("my mine");
+	//string s2("me");
+	//cout << s[0] << s[1] << s[2] << s[3] << endl;
+	int a[] = { 1,2,3,5,1,6,7,8,10,111,67,45,23,45,12,32,89,76,78,56,32,67,45,673,2142,253,454,534,5,65,546,56,53 };
+	int n = sizeof(a) / sizeof(a[0]);
+	for (int i = 0; i < n; i++)
+		cout << a[i] << " ";
+	cout << endl;
+	//bubblesort(a, n);
+	//quicksort(a, 0, n);
+	//inser(a, n);
+	tong(a, n);
+	for (int i = 0; i < n; i++)
+		cout << a[i] << " ";
+	cout << endl;
+
+
+	end = clock();
+	dur = (double)(end - start);
+	printf("Use Time:%f\n", (dur / CLOCKS_PER_SEC));
 }
