@@ -85,7 +85,10 @@
     <Filter Include="源文件\Paractice">
       <UniqueIdentifier>{0c20e907-b144-4a2e-8973-31c9a8f4cd86}</UniqueIdentifier>
     </Filter>
-    <Filter Include="源文件\Paractice\数据结构编程题">
+    <Filter Include="源文件\Paractice\算法自我总结">
+      <UniqueIdentifier>{e1c8f8ae-0fb7-423f-b210-fa80a9c92617}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Paractice\清华OJ">
       <UniqueIdentifier>{c55c3597-1bd5-497d-a612-a03c75755aa3}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -562,19 +565,19 @@
       <Filter>源文件\Paractice</Filter>
     </ClCompile>
     <ClCompile Include="范围查询.cpp">
-      <Filter>源文件\Paractice\数据结构编程题</Filter>
+      <Filter>源文件\Paractice\清华OJ</Filter>
     </ClCompile>
     <ClCompile Include="祖玛_list.cpp">
-      <Filter>源文件\Paractice\数据结构编程题</Filter>
+      <Filter>源文件\Paractice\清华OJ</Filter>
     </ClCompile>
     <ClCompile Include="祖玛.cpp">
-      <Filter>源文件\Paractice\数据结构编程题</Filter>
+      <Filter>源文件\Paractice\清华OJ</Filter>
     </ClCompile>
     <ClCompile Include="祖玛2.cpp">
-      <Filter>源文件\Paractice\数据结构编程题</Filter>
+      <Filter>源文件\Paractice\清华OJ</Filter>
     </ClCompile>
     <ClCompile Include="EX.cpp">
-      <Filter>源文件\Paractice\数据结构编程题</Filter>
+      <Filter>源文件\Paractice\清华OJ</Filter>
     </ClCompile>
     <ClCompile Include="2007分析题.cpp">
       <Filter>源文件\Paractice</Filter>
@@ -583,13 +586,22 @@
       <Filter>源文件\Paractice</Filter>
     </ClCompile>
     <ClCompile Include="灯塔LightHouse.cpp">
-      <Filter>源文件\Paractice\数据结构编程题</Filter>
+      <Filter>源文件\Paractice\清华OJ</Filter>
     </ClCompile>
     <ClCompile Include="列车调度(Train).cpp">
-      <Filter>源文件\Paractice\数据结构编程题</Filter>
+      <Filter>源文件\Paractice\清华OJ</Filter>
     </ClCompile>
     <ClCompile Include="真二叉树重构(Proper Rebuild).cpp">
-      <Filter>源文件\Paractice\数据结构编程题</Filter>
+      <Filter>源文件\Paractice\清华OJ</Filter>
+    </ClCompile>
+    <ClCompile Include="WHUT题目测试.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="华为机试.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="算法总结.cpp">
+      <Filter>源文件\Paractice\算法自我总结</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -627,7 +639,7 @@
       <Filter>源文件\Part 3\Ch15_Test</Filter>
     </Text>
     <Text Include="祖玛输入文件.txt">
-      <Filter>源文件\Paractice\数据结构编程题</Filter>
+      <Filter>源文件\Paractice\清华OJ</Filter>
     </Text>
   </ItemGroup>
   <ItemGroup>

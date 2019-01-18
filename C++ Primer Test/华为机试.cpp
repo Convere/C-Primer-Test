@@ -536,10 +536,13 @@ void bubblesort(int a[], int n)
 		}
 	}
 }
+
+static float num = 0;
 /*快速*/
 int part(int save[], int lo, int hi)
 {
 	int p = save[lo];
+	int l = lo, h = hi;
 	while (lo < hi)
 	{
 		while ((lo < hi) && (p <= save[hi]))
@@ -548,6 +551,12 @@ int part(int save[], int lo, int hi)
 		while ((lo < hi) && (p >= save[lo]))
 			lo++;
 		save[hi] = save[lo];
+	}
+	cout << "前缀长度：" << lo - l << " 后缀长度：" << h - hi << endl;
+	if ((lo - l) > 9 * (h - hi) || (h - hi) > 9 * (lo - l))
+	{
+		cout << "不平衡发生" << endl;
+		num++;
 	}
 	save[lo] = p;
 	return lo;
@@ -599,7 +608,7 @@ void test2()
 	printf("Use Time:%f\n", (dur / CLOCKS_PER_SEC));
 }
 
-int main()
+int mainhw22()
 {
 	double dur;
 	clock_t start, end;
@@ -626,15 +635,18 @@ int main()
 	//string s("my mine");
 	//string s2("me");
 	//cout << s[0] << s[1] << s[2] << s[3] << endl;
-	int a[] = { 1,2,3,5,1,6,7,8,10,111,67,45,23,45,12,32,89,76,78,56,32,67,45,673,2142,253,454,534,5,65,546,56,53 };
+	int a[] = { 1,2,3,5,1,6,7,8,10,111,67,45,23,45,12,32,89,76,78,56,32,67,45,673,2142,253,454,534,5,65,546,56,53,43,1213,245,5,131,231,435,143,3453,467,52,14,14,1414,324,434,2342,42,42,4234,234,24,234,234,234 };
 	int n = sizeof(a) / sizeof(a[0]);
 	for (int i = 0; i < n; i++)
 		cout << a[i] << " ";
 	cout << endl;
 	//bubblesort(a, n);
-	//quicksort(a, 0, n);
+	quicksort(a, 0, n);
+	cout << "不平衡次数共计" << num << "次" << endl;
+	float gailv = num / n;
+	cout << "概率为：" << gailv << endl;
 	//inser(a, n);
-	tong(a, n);
+	//tong(a, n);
 	for (int i = 0; i < n; i++)
 		cout << a[i] << " ";
 	cout << endl;
@@ -643,4 +655,6 @@ int main()
 	end = clock();
 	dur = (double)(end - start);
 	printf("Use Time:%f\n", (dur / CLOCKS_PER_SEC));
+
+	return 0;
 }

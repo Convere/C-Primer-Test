@@ -288,6 +288,7 @@
     <ClCompile Include="祖玛.cpp" />
     <ClCompile Include="祖玛2.cpp" />
     <ClCompile Include="祖玛_list.cpp" />
+    <ClCompile Include="算法总结.cpp" />
     <ClCompile Include="范围查询.cpp" />
   </ItemGroup>
   <ItemGroup>
