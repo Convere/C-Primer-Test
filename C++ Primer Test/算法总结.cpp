@@ -258,7 +258,7 @@ int main_suanfazongjie()
 	//	cout << s.first << "'s parents is " << s.second << endl;
 
 	/*贪婪算法*/
-	set<string> states_needed({ "mt","wa","or","id","nv","ut","ca","az" });//所需数据存储，存储所有需要被广播台覆盖的州
+	set<string> states_needed({ "mt","wa","or","id","nv","ut","ca","az" });   //所需数据存储，存储所有需要被广播台覆盖的州
 	map<string, set<string>> stations;      //各个广播台名字及其范围存储，前string代表广播台的名字，后set<string>代表所覆盖的州
 	set<string> kone({ "id","nv","ut" });
 	stations.insert({ "kone", kone });

@@ -603,6 +603,30 @@
     <ClCompile Include="算法总结.cpp">
       <Filter>源文件\Paractice\算法自我总结</Filter>
     </ClCompile>
+    <ClCompile Include="旅行商(TSP).cpp">
+      <Filter>源文件\Paractice\清华OJ</Filter>
+    </ClCompile>
+    <ClCompile Include="无线广播(Broadcast).cpp">
+      <Filter>源文件\Paractice\清华OJ</Filter>
+    </ClCompile>
+    <ClCompile Include="重名剔除(Deduplicate).cpp">
+      <Filter>源文件\Paractice\清华OJ</Filter>
+    </ClCompile>
+    <ClCompile Include="循环移位(Cycle).cpp">
+      <Filter>源文件\Paractice\清华OJ</Filter>
+    </ClCompile>
+    <ClCompile Include="试探回溯法.cpp">
+      <Filter>源文件\Paractice\算法自我总结</Filter>
+    </ClCompile>
+    <ClCompile Include="迷宫最短路径(BFS).cpp">
+      <Filter>源文件\Paractice\算法自我总结</Filter>
+    </ClCompile>
+    <ClCompile Include="迷宫寻径%28DFS%29.cpp">
+      <Filter>源文件\Paractice\算法自我总结</Filter>
+    </ClCompile>
+    <ClCompile Include="一个图的结构.cpp">
+      <Filter>源文件\Paractice\算法自我总结</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="file1.txt">

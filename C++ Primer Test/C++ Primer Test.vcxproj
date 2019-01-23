@@ -278,8 +278,12 @@
     <ClCompile Include="EX.cpp" />
     <ClCompile Include="EX222.cpp" />
     <ClCompile Include="WHUT题目测试.cpp" />
+    <ClCompile Include="一个图的结构.cpp" />
     <ClCompile Include="列车调度(Train).cpp" />
     <ClCompile Include="华为机试.cpp" />
+    <ClCompile Include="循环移位(Cycle).cpp" />
+    <ClCompile Include="旅行商(TSP).cpp" />
+    <ClCompile Include="无线广播(Broadcast).cpp" />
     <ClCompile Include="灯塔LightHouse.cpp" />
     <ClCompile Include="Shape类派生.cpp" />
     <ClCompile Include="水仙花数.cpp" />
@@ -290,6 +294,10 @@
     <ClCompile Include="祖玛_list.cpp" />
     <ClCompile Include="算法总结.cpp" />
     <ClCompile Include="范围查询.cpp" />
+    <ClCompile Include="试探回溯法.cpp" />
+    <ClCompile Include="迷宫寻径%28DFS%29.cpp" />
+    <ClCompile Include="迷宫最短路径(BFS).cpp" />
+    <ClCompile Include="重名剔除(Deduplicate).cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="8.3.1.txt" />
