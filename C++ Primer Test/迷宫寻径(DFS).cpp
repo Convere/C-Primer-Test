@@ -11,7 +11,7 @@ typedef enum { AVAILABLE, ROUTE, BACKTRACKED, WALL } Status;
 typedef enum { UNKNOWN, EAST, SOUTH, WEST, NORTH, NO_WAY } ESWN;
 inline ESWN nextESWN(ESWN eswn) { return ESWN(eswn + 1); }
 
-static struct Cell
+struct Cell
 {
 	int x, y; Status status;  //xy的坐标与类型
 	ESWN incoming, outgoing;  //进入的方向与出去的方向
