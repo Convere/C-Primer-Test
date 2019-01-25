@@ -261,26 +261,27 @@ template<typename T> void countingsort(T data[], const int n)
 		count[data[i]]++;
 
 	/*以下是正统的计数排序过程*/
-	//for (i = 1; i <= largest; i++)  //把计数容器count内的单个容器数值，遍历成依次叠加的
-	//	count[i] = count[i - 1] + count[i];
-	//for (i = n - 1; i >= 0; i--)    //反向遍历数组data，将其根据计数容器中的位置开始依次放置
-	//{
-	//	temp[count[data[i]] - 1] = data[i];
-	//	count[data[i]]--;           //计数器中对应的元素开始递减，完成循环后与初始计数器（每个元素的数量）保持一致。
-	//}
-	//for (i = 0; i < n; i++)         //temp中的数据已经排序完成，将其重新赋值给data中
-	//	data[i] = temp[i];
+	for (i = 1; i <= largest; i++)  //把计数容器count内的单个容器数值，遍历成依次叠加的
+		count[i] = count[i - 1] + count[i];
+	for (i = n - 1; i >= 0; i--)    //反向遍历数组data，将其根据计数容器中的位置开始依次放置
+	{
+		temp[count[data[i]] - 1] = data[i];
+		count[data[i]]--;           //计数器中对应的元素开始递减，完成循环后与初始计数器（每个元素的数量）保持一致。
+	}
+	for (i = 0; i < n; i++)         //temp中的数据已经排序完成，将其重新赋值给data中
+		data[i] = temp[i];
 	
 	/*以下为桶排序的一种特殊形式，即直接将按计数器的顺序将其对应的每个元素直接赋值*/
-	int num = 0;
-	for (i = 0; i <= largest; i++)
-	{
-		while (count[i] != 0)
-		{
-			data[num] = i;
-			num++; count[i]--;
-		}
-	}
+	//int num = 0;
+	//for (i = 0; i <= largest; i++)
+	//{
+	//	while (count[i] != 0)
+	//	{
+	//		data[num] = i;
+	//		num++; count[i]--;
+	//	}
+	//}
+
 
 }
 
@@ -293,15 +294,15 @@ int main()
 		cout << a[i] << " ";
 	cout << endl;
 
-	//insertionsort(a, n);
-	//selectionsort(a, n);
-	//bubblesort(a, n);
-	//shellsort(a, n);
-	//heapsort(a, n);
-	//quicksort(a, 0, n);
-	//mergesort(a, 0, n);
-	//radixsort(a, n);
-	countingsort(a, n);
+	//insertionsort(a, n);		//插入排序
+	//selectionsort(a, n);		//选择排序
+	//bubblesort(a, n);			//冒泡排序
+	//shellsort(a, n);			//希尔排序
+	//heapsort(a, n);			//堆排序
+	//quicksort(a, 0, n);		//快速排序
+	//mergesort(a, 0, n);		//归并排序
+	//radixsort(a, n);			//基数排序
+	countingsort(a, n);			//计数排序（桶排序）
 
 	cout << "排序后的数组为： ";
 	for (int i = 0; i < n; i++)
