@@ -627,6 +627,9 @@
     <ClCompile Include="一个图的结构.cpp">
       <Filter>源文件\Paractice\算法自我总结</Filter>
     </ClCompile>
+    <ClCompile Include="排序算法.cpp">
+      <Filter>源文件\Paractice\算法自我总结</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="file1.txt">

@@ -283,6 +283,7 @@
     <ClCompile Include="列车调度(Train).cpp" />
     <ClCompile Include="华为机试.cpp" />
     <ClCompile Include="循环移位(Cycle).cpp" />
+    <ClCompile Include="排序算法.cpp" />
     <ClCompile Include="旅行商(TSP).cpp" />
     <ClCompile Include="无线广播(Broadcast).cpp" />
     <ClCompile Include="灯塔LightHouse.cpp" />

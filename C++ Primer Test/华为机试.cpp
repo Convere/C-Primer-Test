@@ -562,12 +562,12 @@ int part(int save[], int lo, int hi)
 	return lo;
 }
 
-void quicksort(int save[], int lo, int hi)
+void Quicksort(int save[], int lo, int hi)
 {
 	if (hi - lo < 2)return;
 	int mi = part(save, lo, hi - 1);
-	quicksort(save, lo, mi);
-	quicksort(save, mi + 1, hi);
+	Quicksort(save, lo, mi);
+	Quicksort(save, mi + 1, hi);
 }
 
 /*插入*/
@@ -641,7 +641,7 @@ int mainhw22()
 		cout << a[i] << " ";
 	cout << endl;
 	//bubblesort(a, n);
-	quicksort(a, 0, n);
+	Quicksort(a, 0, n);
 	cout << "不平衡次数共计" << num << "次" << endl;
 	float gailv = num / n;
 	cout << "概率为：" << gailv << endl;

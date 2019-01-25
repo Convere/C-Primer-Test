@@ -172,7 +172,7 @@ static void displayLaby()
 	}
 }
 
-int main()
+int main_bfs()
 {
 	srand(int(time(0)));  //根据系统时间确定随机种子，保证每次执行都不同
 	randLaby();			  //生成随机迷宫
