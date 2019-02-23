@@ -285,7 +285,7 @@ template<typename T> void countingsort(T data[], const int n)
 
 }
 
-int main()
+int main_sort()
 {
 	int a[] = { 21,1,32,13,56,32,89,54,31,456,324,734,78,123,325,3,7,124 };
 	int n = sizeof(a) / sizeof(int);
