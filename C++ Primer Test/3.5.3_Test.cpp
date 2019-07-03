@@ -4,7 +4,7 @@
 #include <iterator>
 using namespace std;
 
-/*int main()  //Á·Ï°3.35
+/*int main()  //ç»ƒä¹ 3.35
 {
 	int a[5] = { 1,2,3,4,5 };
 	for (auto *i = a, b = 0; i < end(a); i++, b++)
@@ -24,15 +24,15 @@ using namespace std;
 	{
 		if (a[i] != b[i])
 		{
-			cout << "Á½Êý×é²»ÏàµÈ" << endl;
+			cout << "ä¸¤æ•°ç»„ä¸ç›¸ç­‰" << endl;
 			break;
 		}
 	}
 	if (i == 3)
-		cout << "Á½Êý×éÏàµÈ" << endl;
+		cout << "ä¸¤æ•°ç»„ç›¸ç­‰" << endl;
 }*/
 
-/*int main()
+/*int main() // è‹¥æ˜¯ä¸€ä¸ªæ•°ç»„æœ‰ä¸¤ä¸ªä¸€æ ·çš„å­—ç¬¦ä¸² å°±ä¼šå‡ºé”™ é”™è¯¯çš„åœ°æ–¹åœ¨äºŽä½¿ç”¨äº†åµŒå¥—çš„for
 {
 	string temp1;
 	vector<string> a;
@@ -45,19 +45,19 @@ using namespace std;
 	auto a1 = a.begin();
 	auto b1 = b.begin();
 	if (a.size() != b.size())
-		cout << "Á½×Ö·û´®²»ÏàµÈ1" << endl;
+		cout << "ä¸¤å­—ç¬¦ä¸²ä¸ç›¸ç­‰1" << endl;
 	else
 	{
 		for (; a1 < a.end(); a1++)
 			for (; b1 < b.end(); b1++)
 				if (*a1 != *b1)
 				{
-					cout << "Á½×Ö·û´®²»ÏàµÈ2" << endl;
+					cout << "ä¸¤å­—ç¬¦ä¸²ä¸ç›¸ç­‰2" << endl;
 					break;
 				}
 	}
 	if (a1 == a.end())
-		cout << "Á½×Ö·û´®ÏàµÈ" << endl;
+		cout << "ä¸¤å­—ç¬¦ä¸²ç›¸ç­‰" << endl;
 	return 0;
 }*/
 
@@ -83,18 +83,18 @@ using namespace std;
 		}
 	if (an != bn)
 		{
-			cout << "Á½×Ö·û´®²»ÏàµÈ1" << endl;
+			cout << "ä¸¤å­—ç¬¦ä¸²ä¸ç›¸ç­‰1" << endl;
 			return 0;
 		}
 	for (; a1 < a.end(); a1++)
 		for (; b1 < b.end(); b1++)
 			if (*a1 != *b1)
 			{
-				cout << "Á½×Ö·û´®²»ÏàµÈ2" << endl;
+				cout << "ä¸¤å­—ç¬¦ä¸²ä¸ç›¸ç­‰2" << endl;
 				return 0;
 			}
 	if (a1 == a.end())
-		cout << "Á½×Ö·û´®ÏàµÈ" << endl;
+		cout << "ä¸¤å­—ç¬¦ä¸²ç›¸ç­‰" << endl;
 	return 0;
 }*/
 
